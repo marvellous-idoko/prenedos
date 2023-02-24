@@ -54,4 +54,5 @@ app.use(general);
 // app.use((req, res, next) => {
 //     res.render('nsd', {pageTitle: "Page Not Found"})
 // });
-app.listen(8000);
+const port = process.env.PORT || 3000;
+app.listen(port);
