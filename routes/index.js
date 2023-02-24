@@ -42,7 +42,6 @@ router.get('/', async(req, res, next) => {
                     svc6title: data['svc6title'],
                     svc6des: data['svc6des'],
                     // svc1des: data['svc1des'],
-
                 });
 });
 
