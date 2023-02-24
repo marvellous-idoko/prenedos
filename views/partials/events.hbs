@@ -1,0 +1,192 @@
+<section style="background-color: white;">
+
+    <div class="secPad">
+        <div>
+            <h1>Relive some of our most memorable moments</h1>
+        </div>
+        <div>
+            <ul class="flex">
+                <li id="events" onclick="fg('events')">Events</li>
+                <li id="gallery" onclick="fg('gallery')" class="active">Galllery</li>
+            </ul>
+        </div>
+        <div class="tab" id="gallery1">
+            <ul>
+                <li class="curvCor bg" onclick="pode()" style="background-image: url({{firstGalleryImg}});">
+                    <div>
+                        <h3>{{firstGalleryTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor bg" onclick="pode()" style="background-image: url({{secGalleryTitle}});">
+                    <div>
+                        <h3>{{secGalleryTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor bg" onclick="pode()" style="background-image: url({{thirdGalleryTitle}});">
+                    <div>
+                        <h3>{{thirdGalleryTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor bg" onclick="pode()" style="background-image: url({{fourthGalleryImg}});">
+                    <div>
+                        <h3>{{fourthGalleryTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor bg" onclick="pode()" style="background-image: url({{fifthGalleryImg}});">
+                    <div>
+                        <h3>{{fifthGalleryTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor bg" onclick="pode()" style="background-image: url({{sixthGalleryImg}});">
+                    <div>
+                        <h3>{{sixthGalleryTitle}}</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="tab" id="events1">
+            <ul>
+                <li class="curvCor bg" onclick="pode()" style="background-image: url({{firstEventImg}});">
+                    <div>
+                        <h3>{{firstEventTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor bg" onclick="pode()" style="background-image: url({{secondEventImg}});">
+                    <div>
+                        <h3>{{secEventTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor bg" onclick="pode()" style="background-image: url({{thirdEventImg}});">
+                    <div>
+                        <h3>{{thirdEventTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor bg" onclick="pode()" style="background-image: url({{fourthEventImg}});">
+                    <div>
+                        <h3>{{fourthEventTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor bg" onclick="pode()" style="background-image: url({{fifthEventImg}});">
+                    <div>
+                        <h3>{{fifthEventTitle}}</h3>
+                    </div>
+                </li>
+                                <li class="curvCor bg" onclick="pode()" style="background-image: url({{sixthEventImg}});">
+                    <div>
+                        <h3>{{sixthEventTitle}}</h3>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="slideCarrier">
+    <div>
+        <ul>
+            <li class="slider">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="../../img/917-9179948_our-mission-company-vision.png" alt="">
+                    <figcaption>
+                        <h3>Eventos</h3>
+                        <article>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatem impedit in. Error
+                            ex sequi praesentium quidem sunt fuga nisi accusamus perferendis aut vero, provident
+                            tempore, eos in cumque dolores!
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+            <li class="slider">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="../../img/dfe.jpeg" alt="">
+                    <figcaption>
+                        <h3>Eventos</h3>
+                        <article>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatem impedit in. Error
+                            ex sequi praesentium quidem sunt fuga nisi accusamus perferendis aut vero, provident
+                            tempore, eos in cumque dolores!
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+            <li class="slider flex">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="../../img/mKmGmNm0_400x400.jpg" alt="">
+                    <figcaption>
+                        <h3>Eventos</h3>
+                        <article>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatem impedit in. Error
+                            ex sequi praesentium quidem sunt fuga nisi accusamus perferendis aut vero, provident
+                            tempore, eos in cumque dolores!
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+
+        </ul>
+    </div>
+</section>
+<script>
+    let y = document.getElementsByClassName('slider')
+    let countre = 0
+
+    function pode() {
+        document.getElementById('slideCarrier').style.display = 'block'
+        y.item(countre).classList.add('showwq')
+
+    }
+    function clos() {
+        document.getElementById('slideCarrier').style.display = 'none'
+    }
+    function nxt() {
+       // countre++
+       // console.log(countre)
+       // if (countre-- != -1) {
+        //else 
+            y.item(countre).classList.remove('showwq')
+            countre++
+            if(countre == y.length){
+                countre = 0
+            }
+            y.item(countre).classList.add('showwq')
+        
+        // y.item(countre).classList.add('showwq')
+    }
+    function prev() {
+         y.item(countre).classList.remove('showwq')
+            countre--
+            if(countre == -1){
+                countre = y.length - 1
+            }
+            y.item(countre).classList.add('showwq')
+    }
+    document.getElementById('events').click()
+    function fg(sas) {
+        console.log(sas)
+        // buttons
+        document.getElementById('gallery').classList.remove('active')
+        document.getElementById('events').classList.remove('active')
+        document.getElementById(sas).classList.add('active')
+
+        // tabs
+        document.getElementById('events1').classList.remove('show')
+        document.getElementById('gallery1').classList.remove('show')
+        document.getElementById(sas + 1).classList.add('show')
+    }
+</script>

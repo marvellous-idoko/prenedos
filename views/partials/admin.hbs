@@ -1,0 +1,723 @@
+<section>
+    <main>
+        <div>
+            <header>
+                <h4>Home</h4>
+                </hr>
+            </header>
+
+            {{!-- <form action=""> --}}
+                <div class="flex gh ">
+
+                    <label for="">Home First Heading</label>
+                    <input type="text" name="firstHeading" id="firstHeading" value="{{headingOne}}">
+                    <button onclick="updt('firstHeading')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">Home Second Heading</label>
+                    <input type="text" name="secHeading" id="secHeading" value="">
+                    <button onclick="updt('secHeading')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">Home First Paragraph => 1st line</label>
+                    {{!-- <input type="text" name="firstPara" id="firstPara" value=""> --}}
+                    <textarea name="firstPara1" id="firstPara1" cols="30" rows="10"></textarea>
+                    <button onclick="updt('firstPara1')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">Home First Paragraph => second line</label>
+                    {{!-- <input type="text" name="firstPara" id="firstPara" value=""> --}}
+                    <textarea name="firstPara2" id="firstPara2" cols="30" rows="10"></textarea>
+                    <button onclick="updt('firstPara2')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">Home First Paragraph => Third line</label>
+                    {{!-- <input type="text" name="firstPara" id="firstPara" value=""> --}}
+                    <textarea name="firstPara3" id="firstPara3" cols="30" rows="10"></textarea>
+                    <button onclick="updt('firstPara3')">Update</button>
+                </div>
+
+                <div class="flex gh ">
+                    <label for="">Home Second Paragraph </label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <textarea name="secondPara1" id="secondPara1" cols="30" rows="10"></textarea>
+                    <button onclick="updt('secondPara1')">Update</button>
+                </div>
+
+                <div class="flex gh ">
+                    <label for="">Home Second Paragraph </label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <textarea name="secondPara2" id="secondPara2" cols="30" rows="10"></textarea>
+                    <button onclick="updt('secondPara2')">Update</button>
+                </div>
+
+
+                <div class="flex gh ">
+                    <label for="">Home Second Paragraph </label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <textarea name="secondPara3" id="secondPara3" cols="30" rows="10"></textarea>
+                    <button onclick="updt('secondPara3')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">Home First Slide Image</label>
+                    <input type="file" accept="image/*" name="firstSlideImg" id="firstSlideImg" value="">
+                    <button onclick="uplImg('firstSlideImg')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">Home Second Slide Image</label>
+                    <input type="file" accept="image/*" name="secSlideImg" id="secSlideImg" value="">
+                    <button onclick="uplImg('secSlideImg')">Update</button>
+                </div>
+
+                <div class="flex gh ">
+                    <label for="">service One title</label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <input name="svc1title" id="svc1title">
+                    <button onclick="updt('svc1title')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">First Service Image</label>
+                    <input type="file" accept="image/*" name="firstServImg" id="firstServImg" value="">
+                    <button onclick="uplImg('firstServImg')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">service One Description </label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <textarea name="svc1des" id="svc1des" cols="30" rows="10"></textarea>
+                    <button onclick="updt('svc1des')">Update</button>
+                </div>
+           
+                <div class="flex gh ">
+                    <label for="">service two title</label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <input name="svc2title" id="svc2title">
+                    <button onclick="updt('svc2title')">Update</button>
+                </div>
+                
+                    <label for="">second Service Image</label>
+                    <input type="file" accept="image/*" name="secServImg" id="secServImg" value="">
+                    <button onclick="uplImg('secServImg')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">service two Description </label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <textarea name="svc2des" id="svc2des" cols="30" rows="10"></textarea>
+                    <button onclick="updt('svc2des')">Update</button>
+                </div>
+
+                <div class="flex gh ">
+                    <label for="">service three title</label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <input name="svc3title" id="svc3title">
+                    <button onclick="updt('svc3title')">Update</button>
+                </div>
+                 <div class="flex gh ">
+                    <label for="">Third Service Image</label>
+                    <input type="file" accept="image/*" name="thirdServImg" id="thirdServImg" value="">
+                    <button onclick="uplImg('thirdServImg')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">service three Description </label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <textarea name="svc3des" id="svc3des" cols="30" rows="10"></textarea>
+                    <button onclick="updt('svc3des')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">service four title</label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <input name="svc4title" id="svc4title">
+                    <button onclick="updt('svc4title')">Update</button>
+                </div>
+                 <div class="flex gh ">
+                    <label for="">Fourth Service Image</label>
+                    <input type="file" accept="image/*" name="fourthServImg" id="fourthServImg" value="">
+                    <button onclick="uplImg('fourthServImg')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">service four Description </label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <textarea name="svc4des" id="svc4des" cols="30" rows="10"></textarea>
+                    <button onclick="updt('svc4des')">Update</button>
+                </div>
+
+                <div class="flex gh ">
+                    <label for="">service five title</label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <input name="svc5title" id="svc5title">
+                    <button onclick="updt('svc5title')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">Fifth Service Image</label>
+                    <input type="file" accept="image/*" name="fifthServImg" id="fifthServImg" value="">
+                    <button onclick="uplImg('fifthServImg')">Update</button>
+                </div>
+                <div class="flex gh">
+                    <label for="">service five Description </label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <textarea name="svc5des" id="svc5des" cols="30" rows="10"></textarea>
+                    <button onclick="updt('svc5des')">Update</button>
+                </div>
+                <div class="flex gh">
+                    <label for="">service six title</label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <input name="svc6title" id="svc6title">
+                    <button onclick="updt('svc6title')">Update</button>
+                </div>
+                <div class="flex gh ">
+                    <label for="">Sixth Service Image</label>
+                    <input type="file" accept="image/*" name="fifthServImg" id="sixthServImg" value="">
+                    <button onclick="uplImg('sixthServImg')">Update</button>
+                </div
+                <div class="flex gh">
+                    <label for="">service six Description </label>
+                    {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                    <textarea name="svc6des" id="svc6des" cols="30" rows="10"></textarea>
+                    <button onclick="updt('svc6des')">Update</button>
+                </div>
+        </div>
+
+        <div>
+            <div>
+                <h4>about us</h4>
+                <hr>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <h4>Contact us</h4>
+                <hr>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h4>Events</h4>
+                <hr>
+                 <h5>Events</h5>
+                <div class="flex">
+                    <div class="flex gh ">
+                        <label for="">first Event</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="firstEventTitle" id="firstEventTitle">
+                        <button onclick="updt('firstEventTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> first Event Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="firstEventDes" id="firstEventDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('firstEventDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> first Event Image</label>
+                        <input type="file" accept="image/*" name="firstEventImg" id="firstEventImg"
+                            value="">
+                        <button onclick="uplImg('firstEventImg')">Update</button>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex gh ">
+                        <label for="">second Event</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="secEventTitle" id="secEventTitle">
+                        <button onclick="updt('secEventTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> second Event Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="secondEventDes" id="secondEventDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('secondEventDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Second Event Image</label>
+                        <input type="file" accept="image/*" name="secondEventImg" id="secondEventImg"
+                            value="">
+                        <button onclick="uplImg('secondEventImg')">Update</button>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex gh ">
+                        <label for="">Third Event</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="thirdEventTitle" id="thirdEventTitle">
+                        <button onclick="updt('thirdEventTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> Third Event Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="thirdEventDes" id="thirdEventDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('thirdEventDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Third Event Image</label>
+                        <input type="file" accept="image/*" name="thirdEventImg" id="thirdEventImg"
+                            value="">
+                        <button onclick="uplImg('thirdEventImg')">Update</button>
+                    </div>
+                </div>
+                 <div class="flex">
+                    <div class="flex gh">
+                        <label for="">Fourth Event</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="fourthEventTitle" id="fourthEventTitle">
+                        <button onclick="updt('fourthEventTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for="">Fourth Event Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="fourthEventDes" id="fourthEventDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('fourthEventDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Fourth Event Image</label>
+                        <input type="file" accept="image/*" name="fourthEventImg" id="fourthEventImg"
+                            value="">
+                        <button onclick="uplImg('fourthEventImg')">Update</button>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex gh">
+                        <label for="">Fifth Event</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="fifthEventTitle" id="fifthEventTitle">
+                        <button onclick="updt('fifthEventTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for="">Fifth Event Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="fifthEventDes" id="fifthEventDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('fifthEventDes')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> Fifth Event Image</label>
+                        <input type="file" accept="image/*" name="fifthEventImg" id="fifthEventImg"value="">
+                        <button onclick="uplImg('fifthEventImg')">Update</button>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex gh ">
+                        <label for="">Sixth Event Title</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="sixthEventTitle" id="sixthEventTitle">
+                        <button onclick="updt('sixthEventTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for="">Sixth Event Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="sixthEventDes" id="sixthEventDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('sixthEventDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Sixth Event Image</label>
+                        <input type="file" accept="image/*" name="sixthEventImg" id="sixthEventImg"value="">
+                        <button onclick="uplImg('sixthEventImg')">Update</button>
+                    </div>
+                </div>
+                <h5>Gallery</h5>
+                <div class="flex">
+                    <div class="flex gh ">
+                        <label for="">first Gallery</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="firstGalleryTitle" id="firstGalleryTitle">
+                        <button onclick="updt('firstGalleryTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> first Gallery Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="firstGalleryDes" id="firstGalleryDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('firstGalleryDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> first Gallery Image</label>
+                        <input type="file" accept="image/*" name="firstGalleryImg" id="firstGalleryImg"
+                            value="">
+                        <button onclick="uplImg('firstGalleryImg')">Update</button>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex gh ">
+                        <label for="">second Gallery</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="secGalleryTitle" id="secGalleryTitle">
+                        <button onclick="updt('secGalleryTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> second Gallery Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="secondGalleryDes" id="secondGalleryDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('secondGalleryDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Second Gallery Image</label>
+                        <input type="file" accept="image/*" name="secondGalleryImg" id="secondGalleryImg"
+                            value="">
+                        <button onclick="uplImg('secondGalleryImg')">Update</button>
+                    </div>
+                </div>    
+                <div class="flex">
+                    <div class="flex gh ">
+                        <label for="">Third Gallery</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="thirdGalleryTitle" id="thirdGalleryTitle">
+                        <button onclick="updt('thirdGalleryTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> Third Gallery Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="thirdGalleryDes" id="thirdGalleryDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('thirdGalleryDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Third Gallery Image</label>
+                        <input type="file" accept="image/*" name="thirdGalleryImg" id="thirdGalleryImg"
+                            value="">
+                        <button onclick="uplImg('thirdGalleryImg')">Update</button>
+                    </div>
+                </div>
+
+                 <div class="flex">
+
+                    <div class="flex gh">
+                        <label for="">Fourth Gallery</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="fourthGalleryTitle" id="fourthGalleryTitle">
+                        <button onclick="updt('fourthGalleryTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for="">Fourth Gallery Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="fourthGalleryDes" id="fourthGalleryDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('fourthGalleryDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Fourth Gallery Image</label>
+                        <input type="file" accept="image/*" name="fourthGalleryImg" id="fourthGalleryImg"
+                            value="">
+                        <button onclick="uplImg('fourthGalleryImg')">Update</button>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex gh">
+                        <label for="">Fifth Gallery</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="fifthGalleryTitle" id="fifthGalleryTitle">
+                        <button onclick="updt('fifthGalleryTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for="">Fifth Gallery Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="fifthGalleryDes" id="fifthGalleryDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('fifthGalleryDes')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> Fifth Gallery Image</label>
+                        <input type="file" accept="image/*" name="fifthGalleryImg" id="fourthGalleryImg"value="">
+                        <button onclick="uplImg('fifthGalleryImg')">Update</button>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex gh ">
+                        <label for="">Sixth Gallery Title</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="sixthGalleryTitle" id="sixthGalleryTitle">
+                        <button onclick="updt('sixthGalleryTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for="">Sixth Gallery Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="sixthGalleryDes" id="sixthGalleryDes" cols="30" rows="10"></textarea>
+                        <button onclick="updt('sixthGalleryDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Sixth Gallery Image</label>
+                        <input type="file" accept="image/*" name="sixthGalleryImg" id="sixthGalleryImg"value="">
+                        <button onclick="uplImg('sixthGalleryImg')">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h4>Projects</h4>
+                <hr>
+                <h5>Ongoing</h5>
+                <div class="flex">
+                    <div class="flex gh ">
+                        <label for="">first Ongoing Project</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="firstOngoingProjectTitle" id="firstOngoingProjectTitle">
+                        <button onclick="updt('firstOngoingProjectTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> first Ongoing Project Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="firstOngoingProjectDes" id="firstOngoingProjectDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('firstOngoingProjectDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> first Ongoing Project Image</label>
+                        <input type="file" accept="image/*" name="firstOngoingProjectImg" id="firstOngoingProjectImg"
+                            value="">
+                        <button onclick="uplImg('firstOngoingProjectImg')">Update</button>
+                    </div>
+                </div>
+                <div class="flex">
+
+                    <div class="flex gh ">
+                        <label for="">second Ongoing Project</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="secOngoingProjectTitle" id="secOngoingProjectTitle">
+                        <button onclick="updt('secOngoingProjectTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> second Ongoing Project Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="secondOngoingProjectDes" id="secondOngoingProjectDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('secondOngoingProjectDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Second Ongoing Project Image</label>
+                        <input type="file" accept="image/*" name="secondOngoingProjectImg" id="secondOngoingProjectImg"
+                            value="">
+                        <button onclick="uplImg('secondOngoingProjectImg')">Update</button>
+                    </div>
+                </div>
+                
+                <div class="flex">
+
+                    <div class="flex gh ">
+                        <label for="">Third Ongoing Project</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="thirdOngoingProjectTitle" id="thirdOngoingProjectTitle">
+                        <button onclick="updt('thirdOngoingProjectTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> Third Ongoing Project Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="thirdOngoingProjectDes" id="secondOngoingProjectDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('secondOngoingProjectDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Third Ongoing Project Image</label>
+                        <input type="file" accept="image/*" name="thirdOngoingProjectImg" id="thirdOngoingProjectImg"
+                            value="">
+                        <button onclick="uplImg('thirdOngoingProjectImg')">Update</button>
+                    </div>
+                </div>
+
+                 <div class="flex">
+
+                    <div class="flex gh">
+                        <label for="">Fourth Ongoing Project</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="fourthOngoingProjectTitle" id="fourthOngoingProjectTitle">
+                        <button onclick="updt('fourthOngoingProjectTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for="">Fourth Ongoing Project Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="fourthOngoingProjectDes" id="fourthOngoingProjectDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('fourthOngoingProjectDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Fourth Ongoing Project Image</label>
+                        <input type="file" accept="image/*" name="fourthOngoingProjectImg" id="fourthOngoingProjectImg"
+                            value="">
+                        <button onclick="uplImg('fourthOngoingProjectImg')">Update</button>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex gh">
+                        <label for="">Fifth Ongoing Project</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="fifthOngoingProjectTitle" id="fifthOngoingProjectTitle">
+                        <button onclick="updt('fifthOngoingProjectTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for="">Fifth Ongoing Project Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="fifthOngoingProjectDes" id="fifthOngoingProjectDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('fifthOngoingProjectDes')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> Fifth Ongoing Project Image</label>
+                        <input type="file" accept="image/*" name="fifthOngoingProjectImg" id="fifthOngoingProjectImg"value="">
+                        <button onclick="uplImg('fifthOngoingProjectImg')">Update</button>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex gh ">
+                        <label for="">Sixth Ongoing Project Title</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="sixthOngoingProjectTitle" id="sixthOngoingProjectTitle">
+                        <button onclick="updt('sixthOngoingProjectTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for="">Sixth Ongoing Project Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="sixthOngoingProjectDes" id="sixthOngoingProjectDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('sixthOngoingProjectDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Sixth Ongoing Project Image</label>
+                        <input type="file" accept="image/*" name="sixthOngoingProjectImg" id="sixthOngoingProjectImg"value="">
+                        <button onclick="uplImg('sixthOngoingProjectImg')">Update</button>
+                    </div>
+                </div>
+                <h5>Completed</h5>
+                <div class="flex">
+
+                    <div class="flex gh ">
+                        <label for="">first Completed Project</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="firstCompletedProjectTitle" id="firstCompletedProjectTitle">
+                        <button onclick="updt('firstCompletedProjectTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> first Completed Project Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="firstCompletedProjectDes" id="firstCompletedProjectDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('firstCompletedProjectDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> first Completed Project Image</label>
+                        <input type="file" accept="image/*" name="firstCompletedProjectImg" id="firstCompletedProjectImg"
+                            value="">
+                        <button onclick="uplImg('firstCompletedProjectImg')">Update</button>
+                    </div>
+                </div>
+                <div class="flex">
+
+                    <div class="flex gh ">
+                        <label for="">second Completed Project</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="secCompletedProjectTitle" id="secCompletedProjectTitle">
+                        <button onclick="updt('secCompletedProjectTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> second Completed Project Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="secondCompletedProjectDes" id="secondCompletedProjectDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('secondCompletedProjectDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Second Completed Project Image</label>
+                        <input type="file" accept="image/*" name="secondCompletedProjectImg" id="secondCompletedProjectImg"
+                            value="">
+                        <button onclick="uplImg('secondCompletedProjectImg')">Update</button>
+                    </div>
+                </div>
+                
+                <div class="flex">
+
+                    <div class="flex gh ">
+                        <label for="">Third Completed Project</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="thirdCompletedProjectTitle" id="thirdCompletedProjectTitle">
+                        <button onclick="updt('thirdCompletedProjectTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> Third Completed Project Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="thirdCompletedProjectDes" id="secondCompletedProjectDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('secondCompletedProjectDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Third Completed Project Image</label>
+                        <input type="file" accept="image/*" name="thirdCompletedProjectImg" id="thirdCompletedProjectImg"
+                            value="">
+                        <button onclick="uplImg('thirdCompletedProjectImg')">Update</button>
+                    </div>
+                </div>
+
+                 <div class="flex">
+
+                    <div class="flex gh">
+                        <label for="">Fourth Completed Project</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="fourthCompletedProjectTitle" id="fourthCompletedProjectTitle">
+                        <button onclick="updt('fourthCompletedProjectTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for="">Fourth Completed Project Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="fourthCompletedProjectDes" id="fourthCompletedProjectDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('fourthCompletedProjectDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Fourth Completed Project Image</label>
+                        <input type="file" accept="image/*" name="fourthCompletedProjectImg" id="fourthCompletedProjectImg"
+                            value="">
+                        <button onclick="uplImg('fourthCompletedProjectImg')">Update</button>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex gh">
+                        <label for="">Fifth Completed Project</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="fifthCompletedProjectTitle" id="fifthCompletedProjectTitle">
+                        <button onclick="updt('fifthCompletedProjectTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for="">Fifth Completed Project Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="fifthCompletedProjectDes" id="fifthCompletedProjectDes" cols="30"
+                            rows="10"></textarea>
+                        <button onclick="updt('fifthCompletedProjectDes')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for=""> Fifth Completed Project Image</label>
+                        <input type="file" accept="image/*" name="fifthCompletedProjectImg" id="fourthCompletedProjectImg"value="">
+                        <button onclick="uplImg('fifthCompletedProjectImg')">Update</button>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex gh ">
+                        <label for="">Sixth Completed Project Title</label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <input name="sixthCompletedProjectTitle" id="sixthCompletedProjectTitle">
+                        <button onclick="updt('sixthCompletedProjectTitle')">Update</button>
+                    </div>
+                    <div class="flex gh">
+                        <label for="">Sixth Completed Project Description </label>
+                        {{!-- <input type="text" name="secondPara" id="secondPara" value=""> --}}
+                        <textarea name="sixthCompletedProjectDes" id="sixthCompletedProjectDes" cols="30" rows="10"></textarea>
+                        <button onclick="updt('sixthCompletedProjectDes')">Update</button>
+                    </div>
+                    <div class="flex gh ">
+                        <label for=""> Sixth Completed Project Image</label>
+                        <input type="file" accept="image/*" name="sixthCompletedProjectImg" id="sixthCompletedProjectImg"value="">
+                        <button onclick="uplImg('sixthCompletedProjectImg')">Update</button>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div>
+                    <h4>Footer</h4>
+                    <hr>
+                </div>
+            </div>
+    </main>
+    <script src="./JS/admin.js"></script>
+</section>

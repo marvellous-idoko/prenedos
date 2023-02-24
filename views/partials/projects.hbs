@@ -1,0 +1,179 @@
+<section style="background-color: white;">
+    
+    <div class="secPad">
+    <div>
+        <h1>Projects</h1>
+    </div>
+    <div>
+        <ul class="flex">
+            <li  id="ongoing" onclick="fg('ongoing')">Ongoing</li>
+            <li  id="completed" onclick="fg('completed')" class="active">Completed</li>
+        </ul>
+    </div>
+    <div class="tab" id="ongoing1">
+        <ul>    
+            <li  class="curvCor bg"  onclick="pode()"  
+            style="background-image: url({{firstOngoingProjectImg}});">
+                <div>
+                <h3>{{firstOngoingProjectTitle}}</h3>
+                </div>
+            </li>
+            <li  class="curvCor  bg"  onclick="pode()"  style="background-image: url({{secondOngoingProjectImg}});">
+                <div><h3>{{secOngoingProjectTitle}}</h3></div>
+            </li>
+            <li  class="curvCor  bg"  onclick="pode()"  style="background-image: url({{thirdOngoingProjectImg}});">
+                <div><h3>{{thirdOngoingProjectTitle}}</h3></div>
+            </li>
+            <li  class="curvCor  bg"  onclick="pode()"  style="background-image: url({{fourthOngoingProjectImg}});">
+                <div><h3>{{fourthOngoingProjectTitle}}</h3></div>
+            </li>
+           <li  class="curvCor  bg"  onclick="pode()"  style="background-image: url({{fifthOngoingProjectImg}});">
+                <div><h3>{{fifthOngoingProjectTitle}}</h3></div>
+            </li>
+
+             {{#if sixthOngoingProjectTitle}}
+
+            <li  class="curvCor  bg"  onclick="pode()"  style="background-image: url({{sixthOngoingProjectImg}});">
+                <div><h3>{{sixthOngoingProjectTitle}}</h3></div>
+            </li>
+         {{/if}}
+        
+        </ul>
+    </div>
+    <div  class="tab" id="completed1">
+        <ul>
+            <li  class="curvCor  bg"  onclick="pode()"  style="background-image: url({{firstCompletedProjectImg}});">
+                <div><h3>{{firstCompletedProjectTitle}}</h3></div>
+            </li>
+            <li  class="curvCor  bg"  onclick="pode()"  style="background-image: url({{secondCompletedProjectImg}});">
+                <div><h3>{{secondCompletedProjectTitle}}</h3></div>
+            </li>
+            <li  class="curvCor  bg"  onclick="pode()"  style="background-image: url({{thirdCompletedProjectImg}});">
+                <div><h3>{{thirdCompletedProjectTitle}}</h3></div>
+            </li>
+            <li  class="curvCor  bg"  onclick="pode()"  style="background-image: url({{fourthCompletedProjectImg}});">
+                <div><h3>{{fourthCompletedProjectTitle}}</h3></div>
+            </li>
+            <li  class="curvCor  bg"  onclick="pode()"  style="background-image: url({{fifthCompletedProjectImg}});">
+                <div><h3>{{fifthCompletedProjectTitle}}</h3></div>
+            </li>
+            <li  class="curvCor  bg"  onclick="pode()"  style="background-image: url({{sixthCompletedProjectImg}});">
+                <div><h3>{{sixthCompletedProjectTitle}}</h3></div>
+            </li>
+        </ul>
+    </div>
+    </div>
+</section>
+
+<section id="slideCarrier">
+    <div>
+        <ul>
+            <li class="slider">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="../../img/917-9179948_our-mission-company-vision.png" alt="">
+                    <figcaption>
+                        <h3>Eventos</h3>
+                        <article>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatem impedit in. Error
+                            ex sequi praesentium quidem sunt fuga nisi accusamus perferendis aut vero, provident
+                            tempore, eos in cumque dolores!
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+            <li class="slider">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="../../img/dfe.jpeg" alt="">
+                    <figcaption>
+                        <h3>Eventos</h3>
+                        <article>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatem impedit in. Error
+                            ex sequi praesentium quidem sunt fuga nisi accusamus perferendis aut vero, provident
+                            tempore, eos in cumque dolores!
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+            <li class="slider flex">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="../../img/mKmGmNm0_400x400.jpg" alt="">
+                    <figcaption>
+                        <h3>Eventos</h3>
+                        <article>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatem impedit in. Error
+                            ex sequi praesentium quidem sunt fuga nisi accusamus perferendis aut vero, provident
+                            tempore, eos in cumque dolores!
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+
+        </ul>
+    </div>
+</section>
+
+<script>
+    let y = document.getElementsByClassName('slider')
+    let countre = 0
+
+    function pode() {
+        document.getElementById('slideCarrier').style.display = 'block'
+        y.item(countre).classList.add('showwq')
+
+    }
+    function clos() {
+        document.getElementById('slideCarrier').style.display = 'none'
+    }
+    function nxt() {
+       // countre++
+       // console.log(countre)
+       // if (countre-- != -1) {
+        //else 
+            y.item(countre).classList.remove('showwq')
+            countre++
+            if(countre == y.length){
+                countre = 0
+            }
+            y.item(countre).classList.add('showwq')
+        
+        // y.item(countre).classList.add('showwq')
+    }
+    function prev() {
+         y.item(countre).classList.remove('showwq')
+            countre--
+            if(countre == -1){
+                countre = y.length - 1
+            }
+            y.item(countre).classList.add('showwq')
+    }
+
+
+    document.getElementById('ongoing').click()
+    function fg(sas){
+        console.log(sas)
+        // buttons
+        document.getElementById('completed').classList.remove('active')
+        document.getElementById('ongoing').classList.remove('active')
+        document.getElementById(sas).classList.add('active')
+        
+        // tabs
+        document.getElementById('ongoing1').classList.remove('show')
+        document.getElementById('completed1').classList.remove('show')
+        document.getElementById(sas+1).classList.add('show')
+    }
+</script>

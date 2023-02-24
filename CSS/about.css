@@ -1,0 +1,84 @@
+
+.contents {
+    padding: 10px;
+    opacity: 1;
+    /* padding-left: 10vw; */
+}
+
+.noneDisp {
+    display: none;
+}
+
+ul>li.linksw:hover {
+    color: orange;
+    background-color: #8e24aa30;
+}
+
+.act {
+    line-height: 2;
+    font-size: medium;
+    
+}
+figure.awards > figcaption>h3{
+    margin: 20px;
+}
+figure.awards > figcaption:hover{
+    opacity: 1;
+}   
+ figure.awards > figcaption{
+    height: inherit;
+    place-content: baseline;
+    place-items: end;
+    width: inherit;
+    background-image: linear-gradient(180deg,transparent,transparent, var(--purple));
+    color: white;
+    opacity: 0;
+    transition: all .38s ease;
+}
+
+.active {
+    color: orange;
+    background-image:linear-gradient(90deg, var(--purple), transparent);
+}
+.curvCor{
+    border-radius: 10px;
+}
+div>figure{
+    opacity: 0;
+    cursor: default;
+}
+figure.awards{
+    height: 50vh;
+    opacity: 1;
+}
+ul>li.linksw {
+    margin-top: 1em;
+    padding: 10px;
+    will-change: background-color;
+    transition: all .38s ease;
+    cursor: pointer;
+}
+figcaption>p{
+    margin: 2px;
+}
+#team1 img{
+    border-radius: 50%;
+}
+@keyframes kil {
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes kiql {
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

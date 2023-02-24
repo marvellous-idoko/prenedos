@@ -1,0 +1,81 @@
+section{
+    color:black;
+    background-color: #f8efe0;
+}
+div.paralax{
+    height: 15em;
+}
+ul.add{
+    place-content: space-around;
+}
+ul.add>li>p{
+    padding-left: 20px;
+    line-height: 2;
+}
+ul.add>li{
+    max-width: 12em;
+    background-color: white;
+}
+ul.add>li>h4:nth-of-type(2){
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    text-align: center;
+}
+ul.add>li>h4{
+    background-color: var(--purple);
+    color: white;
+    padding: 10px 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+@keyframes ced {
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+}
+#lo{
+    text-align: center;color:white;
+    animation:ced .56s cubic-bezier(0.65, 0.05, 0.36, 1) .12s forwards;
+    opacity: 0;
+}
+form> div{
+    width: 40em;
+
+}
+.frmBx{
+    margin: 10px 0;
+}
+
+form>div>button:hover{
+    background-color: purple;
+    color: orange;
+}
+    form>div>button{
+    width: 100%;
+    height: 3em;
+    background-color: var(--purple);
+    color: white;
+    border: 0;
+    transition: all .38s ease;
+    will-change: background-color;
+    cursor: pointer;
+}
+
+div.frmBx input,div.frmBx textarea{
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid var(--purple);
+    
+}
+textarea{
+    padding: auto;
+}

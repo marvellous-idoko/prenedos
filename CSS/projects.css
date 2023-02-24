@@ -1,0 +1,97 @@
+ul.flex>li.active {
+    background-color: #dda0dd47;
+    border-bottom: 2px solid var(--purple);
+    color: var(--purple);
+}
+
+ul.flex>li:hover {
+    background-color: #dda0dd47;
+}
+
+ul.flex>li {
+    transition: background-color .7s ease;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+}
+
+div.tab>ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+div.tab>ul>li>div>h3 {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    padding: 0.2em 1em 0.5em;    color: white;
+}
+
+div.tab>ul>li>div:hover>h3, div.tab>ul>li>div:hover{
+    bottom: 0;
+    opacity: 1;
+    transition: .5s;
+
+}
+
+div.tab>ul>li>div {
+    transition: .25s;
+    opacity: 0;
+    height: inherit;
+    width: inherit;
+    background-image: linear-gradient(180deg, transparent,  transparent,  transparent,var(--purple)); 
+    position: relative;
+}
+.slider{
+    transition: .25s;
+    display: none;
+}
+div.tab>ul>li {
+    width: 20em;
+    height: 10em;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+.showwq{
+    display: block!important;
+}
+#slideCarrier{
+    background-image: linear-gradient(45deg,orange,var(--purple));
+    overflow: auto;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:0;
+    color: white;
+    transition:all .25s;
+
+}
+#slideCarrier, #slideCarrier li{
+    display: none;
+}
+ul.flex {
+    place-content: baseline;
+    border-bottom: 1px solid var(--purple);
+}
+
+section {
+    color: black;
+    padding: 30px 0;
+}
+
+.show {
+    display: block !important;
+
+}
+
+.tab {
+    display: none;
+}
+
+section>div>div {
+    margin-bottom: 2em;
+}

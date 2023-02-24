@@ -1,0 +1,337 @@
+:root{
+    --purple:#8e24aa;
+}
+.flex {
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+#secondSec {
+    height: 100vh;
+    margin-top: -14em;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    color: var(--purple);
+}
+
+figure.imgs {
+    transform: rotate(-25deg);
+    height: 35em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bigTxt {
+    font-size: xx-large;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1px;
+}
+
+h1#bgTxt {
+    color: transparent;
+    background-image: linear-gradient(90deg, rgb(0, 255, 200), rgb(255, 187, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    font-size: 50px;
+    font-family: system-ui;
+    margin: 0;
+    background-clip: text;
+}
+
+.secPad {
+    padding: 0 10vw;
+}
+footer > article{
+    line-height: 1.4;
+}
+
+body,
+html {
+    color: white;
+    background-image: linear-gradient(90deg, var(--purple), black);
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: ubuntu,Helvetica,Arial,sans-serif; */
+    font-family: Trebuchet MS, sans-serif;
+}
+
+@keyframes opl {
+    from {
+        transform: translateY(100px);
+        opacity: .2;
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+@keyframes lok {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes olos {
+    from {
+        transform: translateY(80px);
+        line-height: 4;
+    }
+
+    to {
+        line-height: 1.5;
+        opacity: 1;
+
+    }
+}
+@keyframes olo {
+    from {
+        transform: translateY(80px);
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+nav a.flex:hover {
+    transition: background-color, .38s cubic-bezier(0.215, 0.610, 0.355, 1);
+    background-color: rgba(255, 255, 255, 0.233);}
+
+nav a.flex:hover {
+    transition: background-color, .38s cubic-bezier(0.215, 0.610, 0.355, 1);
+    background-color: rgba(255, 255, 255, 0.233);
+}
+
+button#jjk {
+    cursor: pointer;
+    background-color: white;
+    width: 7em;
+    height: 2.7em;
+    border-radius: 30px;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+}
+button#bnh{
+    padding:10px 20px ;
+    cursor: pointer;
+    transition: background-color .25s;
+    border-radius: 30px;
+    border: 2px solid white;
+
+}
+button.anik {
+    animation-delay: 2.4s;
+    background-color: white;
+    width: 10em;
+    height: 3.5em;
+    border-radius: 30px;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    margin: 20px 0 0;
+    cursor: pointer;
+    transition: background-color .25s;
+}
+
+.links {
+    height: inherit;
+    text-decoration: none;
+    color: #ccc;
+    padding: 0 .5em;
+}
+
+.anik {
+    animation: olo 1s ease forwards;
+    opacity: 0;
+}
+
+div.serv>figure>div:hover {
+    opacity: 1;
+    transition: opacity 1.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+    div.serv>figure>div {
+    opacity: 0;
+    height: inherit;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, rgba(0, 0, 128, 0.411), rgba(0, 0, 0, 0.363));
+
+    /* background-image: linear-gradient(45deg, black, transparent); */
+    border-radius: 15px;
+}
+div#iop{
+    height: 15em;
+}
+section.paralax>div{
+    height:65vh;
+     background-image:linear-gradient(180deg,rgba(128, 0, 128, 0.507),rgba(255, 166, 0, 0.466))
+}
+.custom-shape-divider-top-1675691460 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.bigBtn{
+
+}
+article.anik{
+    margin-bottom: 5px;
+    
+}
+    .bigBtn:hover{
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-family: 'Secular One', sans-serif;
+}
+ul.flex, ul.flex>li,ul,li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.flex figure>img{
+    height: 5em;
+}
+.custom-shape-divider-top-1675737050 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+footer a{
+    padding: .3em;
+    border-radius: 3px;
+}
+footer a:hover{
+    color: #ea6015;
+    background-color: white;
+    transition: all .64s ease;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+li>.iw{
+    margin:1.3em 0;
+}
+.lis{
+    margin:.5em 0;
+
+}
+footer div ul.flex{
+    place-items: baseline;
+}
+footer div ul.flex>li{
+    flex:1;
+    margin: 1em 2em;
+}
+.custom-shape-divider-top-1675737050 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 87px;
+}
+
+.custom-shape-divider-top-1675737050 .shape-fill {
+    fill: #FFFFFF;
+}
+.custom-shape-divider-top-1675692162 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+footer{
+    background-image: url(../img/electricity.jpg);
+}
+.custom-shape-divider-top-1675692162 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 89px;
+}
+
+.custom-shape-divider-top-1675692162 .shape-fill {
+    fill: transparent;
+}
+.custom-shape-divider-top-1675691460 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1675691460 .shape-fill {
+    fill: #FFFFFF;
+}
+.curvers{
+    width: 100%;
+    height: inherit;
+    background: white;
+}
+div#iop{
+    
+}
+.paralax{
+    background-image: url(../img/ks.jpeg);
+    height: calc(100% + 5vh); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.serv >figure{
+    background-image: url(../img/dfe.jpeg);
+    height: 12em;
+    margin: 2px;
+    width: inherit;
+    color: white;
+}
+
+.curvCor{
+    border-radius: 15px;
+}
+div.serv {
+    /* color: white; */
+    width: 20em;
+    cursor:default;
+    margin: 10px;
+    opacity: 0;
+    animation: lok 1s ease 3s forwards;
+}
+
+.bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    text-align: center;
+}

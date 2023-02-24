@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ data }}</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    {{#if adminCSS}}
+    <link rel="stylesheet" href="/CSS/admin.css">
+    {{/if}}
+    {{#if abtUs}}
+    <link rel="stylesheet" href="/CSS/about.css">
+    {{/if}}
+    {{#if cntUs}}
+    <link rel="stylesheet" href="/CSS/contact.css">
+    {{/if}}
+    {{#if prjcts}}
+    <link rel="stylesheet" href="/CSS/projects.css">
+    {{/if}}
+    {{#if faqs}}
+    <link rel="stylesheet" href="/CSS/faqs.css">
+    {{/if}}
+</head>
+
+<body>
+    <nav style=" z-index:3;   position: fixed;
+    width: 100%;
+    background-color: var(--purple);
+    box-shadow: 0 4px 16px 0 #313131;">
+        <div class="flex secPad" style="  height: 3em;  border-bottom: 1px white solid;">
+            <figure><img src="./img/logo.png" alt="logo" height="30"></figure>
+            <div style="flex: 2;"></div>
+            <div class="flex" style="place-content: space-around; width: 30vw; height: inherit;">
+                <a href="/home" class="flex"
+                    style="text-decoration: none; height:inherit; border-bottom: 3px white solid;">
+                    <p style="margin: 0;color: white;" class="links flex">
+                        Home
+                    </p>
+                </a>
+                <a href="../projects" class="flex" style="text-decoration: none; height:inherit;">
+                    <p style="margin: 0;" class="links flex">
+                        Projects
+                    </p>
+                </a>
+                <a href="../aboutUs" class="flex" style="text-decoration: none; height:inherit;">
+                    <p style="margin: 0;" class="links flex">
+                        About us
+                    </p>
+                </a>
+                <a href="../events" class="flex" style="text-decoration: none; height:inherit;">
+                    <p style="margin: 0;" class="links flex">
+                        events
+                    </p>
+                </a>
+                <a href="../faqs" class="flex" style="text-decoration: none; height:inherit;">
+                    <p style="margin: 0;" class="links flex">
+                        FAQs
+                    </p>
+                </a>
+
+            </div>
+            <div><a href="../contact"><button id="jjk">Let's talk</button></a></div>
+        </div>
+    </nav>
+    <div style="height: 70px;background-color:var(--purple);"></div>
+    {{!-- <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a class="{{#if activeShop }}active{{/if}}" href="/">Shop</a></li>
+                <li class="main-header__item"><a class="{{#if activeAddProduct }}active{{/if}}"
+                        href="/admin/add-product">Add Product</a></li>
+            </ul>
+        </nav>
+    </header> --}}
+    {{{ body }}}
+
+    <footer class="bg">
+        <div style="background-color: #00000085;" class="secPad">
+            <ul class="flex">
+                <li>
+                    <h4 class="iw">Quick Links</h4>
+                    <ul>
+                        <li>
+                            <a href="../home">Home</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="../aboutUs">About us</a>
+
+                        </li>
+                        {{!--
+                        <hr> --}}
+                        {{!-- <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="#">Blog</a>
+
+                        </li> --}}
+                        <hr>
+                        <li>
+                            <a href="../events">Events</a>
+                        </li>
+
+                        <hr>
+                        <li>
+                            <a href="../projects">Projects</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="../faqs">FAQs</a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="iw">
+                    <h4 class="iw">Call in at</h4>
+                    <div class="iw">
+                        <header>
+                            Address
+                        </header>
+                        <address>
+                            144/145 Egbeda Idimu Road, Seliat Bustop, Egbeda, Lagos.
+                        </address>
+
+                    </div>
+                    <div class="iw">
+                        <header>
+                            Telephone
+                        </header>
+                        <ul>
+                            <li><a href="tel:+2348055637014">0805 563 7014</a></li>
+                            <li><a href="tel:+2348055637014">0805 563 7014</a></li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <header>
+                            Email
+                        </header>
+                        <a href="mailto:info@prenedos.com">Info@prenedos.com</a>
+
+                    </div>
+
+                </li>
+                <li>
+                    <h4>Services</h4>
+                    <ul>
+                        <li class="lis">Domestic & Industrial Wiring
+                        </li>
+                        <li class="lis">Rural & Urban Electrification
+                        </li>
+                        <li class="lis">Alternative Energy
+                        </li>
+                        <li class="lis">Electrical/Energy Audit
+                        </li>
+                        <li class="lis">Energy Management System
+                        </li>
+                        <li class="lis">Transformer Sales & Installation
+                        </li>
+                        <li class="lis">
+                            Concrete Poles Sales & Installation
+                            and lots more…
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iw">
+
+                        <h4>
+                            Our Mission
+                        </h4>
+                        <article>
+                            Our mission is in proffering cost-effective solution to electricity by igniting your world
+                            via various energy sources that best suit your needs.
+                        </article>
+                    </div>
+                    <div class="iw">
+
+                        <h4>
+                            Our Vision
+                        </h4>
+                        <article>
+                            To be the preferred electricity service provider of choice with the most satisfied client by
+                            offering dynamic electricity solutions, in an affordable & sustainable way that stimulate
+                            economic growth
+                        </article>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./JS/script.js"></script>
+
+    {{#if abtUs}}
+    <script src="./JS/aboutus.js"></script>
+    {{/if}}
+</body>
+
+</html>

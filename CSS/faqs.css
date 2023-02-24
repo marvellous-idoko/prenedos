@@ -1,0 +1,51 @@
+section{
+    color:black;
+    background-color: white;
+}
+h1#jkl{
+    color: transparent;
+    background-image: linear-gradient(90deg, orange, var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    font-size: 100px;
+    font-family: system-ui;
+    margin: 0;
+    width: fit-content;
+    opacity: 0;
+    animation: sedwd 1s .2s forwards;
+}
+li>div>div{
+    margin-top: 15px;
+    place-items: baseline!important;
+    place-content: flex-end!important;
+}
+@keyframes swd {
+    /* from{
+        transform: translateX(-200px);
+    } */
+    to{
+        opacity: 1;
+    }
+
+}
+div.flex>a>button{
+    background-image: linear-gradient(90deg, orange, var(--purple));
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    font-size: medium;
+    border-radius: 20px;
+    opacity: 0;
+    animation: swd .78s ease .5s forwards;
+}
+@keyframes sedwd {
+    from{
+        transform: translateX(200px);
+
+    }
+    to{
+        opacity: 1;
+    }
+
+}
