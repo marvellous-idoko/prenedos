@@ -1,8 +1,9 @@
+const srv = 'https://prenedos.herokuapp.com/' 
 const formData = new FormData();
 function sender(urlm, il) {
     let y = { case: urlm, value: il }
     console.log(y)
-    fetch('http://localhost:8000/admin/upd', {
+    fetch(srv+"upd", {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',
@@ -22,7 +23,6 @@ function updt(whatn) {
     sender(whatn, document.getElementById(whatn).value)
 }
 
-// formData.append('avatar', fileField.files[0]);
 
 function uplImg(whatsx) {
     if (whatsx == 'firstSlideImg') {
@@ -31,17 +31,12 @@ function uplImg(whatsx) {
         sendImg(formData)
     }
     else if (whatsx == 'secSlideImg') {
-        
+
         formData.append('photo', document.getElementById('secSlideImg').files[0]);
         formData.append('value', 'secSlideImg')
         sendImg(formData)
     }
     
-    // else if (whatsx == 'thirdSlideImg') {
-    //     formData.append('photo', document.getElementById('secSlideImg').files[0]);
-    //     formData.append('value', 'thirdSlideImg')
-    //     sendImg(formData)
-    // }
     
     else if (whatsx == 'firstOngoingProjectImg') {
         formData.append('photo', document.getElementById('firstOngoingProjectImg').files[0]);
@@ -111,38 +106,6 @@ function uplImg(whatsx) {
         formData.append('value', 'sixthCompletedProjectImg')
         sendImg(formData)
     }
-            
-    // else if (whatsx == 'gallery1') {
-    //     formData.append('photo', document.getElementById('gallery1').files[0]);
-    //     formData.append('value', 'gallery1')
-    //     sendImg(formData)
-    // }            
-    // else if (whatsx == 'gallery2') {
-    //     formData.append('photo', document.getElementById('gallery2').files[0]);
-    //     formData.append('value', 'even2')
-    //     sendImg(formData)
-    // }           
-    // else if (whatsx == 'gallery3') {
-    //     formData.append('photo', document.getElementById('gallery3').files[0]);
-    //     formData.append('value', 'gallery3')
-    //     sendImg(formData)
-    // }            
-    // else if (whatsx == 'gallery4') {
-    //     formData.append('photo', document.getElementById('gallery4').files[0]);
-    //     formData.append('value', 'gallery4')
-    //     sendImg(formData)
-    // }            
-    // else if (whatsx == 'gallery5') {
-    //     formData.append('photo', document.getElementById('gallery5').files[0]);
-    //     formData.append('value', 'gallery5')
-    //     sendImg(formData)
-    // }            
-    // else if (whatsx == 'gallery6') {
-    //     formData.append('photo', document.getElementById('gallery6').files[0]);
-    //     formData.append('value', 'gallery6')
-    //     sendImg(formData)
-    // }     
-    
     
 
     else if (whatsx == 'firstEventImg') {
@@ -208,10 +171,6 @@ function uplImg(whatsx) {
         formData.append('value', 'sixthGalleryImg')
         sendImg(formData)
     }
-
-
-
-
     else if (whatsx == 'sixthServImg') {
         formData.append('photo', document.getElementById('sixthServImg').files[0]);
         formData.append('value', 'sixthServImg')
@@ -245,27 +204,17 @@ function uplImg(whatsx) {
     }
 }
 function sendImg(frmDta) {
-    // console.log(frmDta['photo'].files.length > 0)
-    // console.log(!!frmDta.entries().next().value); // true
 
-    fetch('http://localhost:8000/admin/upImg', {
+    fetch(srv+"upImg", {
         method: 'PUT',
         body: frmDta
-    })
-}
-// const fileField = document.querySelector('input[type="file"]');
-
-// formData.append('username', 'abc123');
-// formData.append('avatar', fileField.files[0]);
-
-fetch('https://example.com/profile/avatar', {
-    method: 'PUT',
-    body: formData
-})
+    }) 
     .then((response) => response.json())
-    .then((result) => {
-        console.log('Success:', result);
+    .then((data) => {
+        console.log('Success:', data);
+        alert(data.msg)
     })
     .catch((error) => {
         console.error('Error:', error);
-    });
+    })
+}
