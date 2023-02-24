@@ -8,14 +8,14 @@ const db = require("../schema/database");
 const router = express.Router();
 // let dbt  ;
 // (async function(){
-//        dbt = await db.findById('630d4d987a298eb00f946dbb')
+//        dbt = await db.findById('630d2084647428d2d665306f')
 // })();
 
 router.get('/', async(req, res, next) => {
   res.redirect('home')
 }) 
  router.get('/home', async(req, res, next) => {
-    let dbt = await db.findById('630d4d987a298eb00f946dbb')
+    let dbt = await db.findById('630d2084647428d2d665306f')
     console.log(dbt);
     let data = JSON.parse(dbt['address'])
   res.render('home', { title: 'products',
@@ -55,7 +55,7 @@ router.get('/contact', (req, res, next) => {
     res.render('contact-us', { cntUs:true });
   });
   router.get('/projects', async(req, res, next) => {
-    let dbt = await db.findById('630d4d987a298eb00f946dbb')
+    let dbt = await db.findById('630d2084647428d2d665306f')
     let data = JSON.parse(dbt['address'])
     res.render('projects', {
              prjcts:true,
@@ -114,7 +114,7 @@ router.get('/contact', (req, res, next) => {
   });
 
   router.get('/events', async(req, res, next) => {
-    let dbt = await db.findById('630d4d987a298eb00f946dbb')
+    let dbt = await db.findById('630d2084647428d2d665306f')
     let data = JSON.parse(dbt['address'])
      res.render('events', { prjcts:true,
       firstEventTitle:data['firstEventTitle'],
