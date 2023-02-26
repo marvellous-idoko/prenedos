@@ -78,6 +78,7 @@ fireUploader = async (image)=>{
 uploadTask.then(async()=>{
  url = await firebase.getDownloadURL(d)
 })
+console.log(url)
 //    uploadTask.then() => {
 //     // uploadTask.snapshot.ref.getDownloadURL().then(downloadURL => url = downloadURL)
   
