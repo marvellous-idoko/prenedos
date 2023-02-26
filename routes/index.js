@@ -21,6 +21,7 @@ router.get('/', async(req, res, next) => {
  router.get('/home', async(req, res, next) => {
     // let dbt = await db.findById('630d2084647428d2d665306f')
     let data = JSON.parse(dbt['address'])
+    console.log(data)
   res.render('home', { title: 'products',
                     headingOne: data['firstHeading'],
                     headingTwo: data['secHeading'],
