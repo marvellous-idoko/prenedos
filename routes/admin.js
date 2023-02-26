@@ -77,8 +77,8 @@ fireUploader = async (image)=>{
    let uploadTask = firebase.uploadBytes(d,image) 
 uploadTask.then(async()=>{
  url = await firebase.getDownloadURL(d)
+ console.log(url)
 })
-console.log(url)
 //    uploadTask.then() => {
 //     // uploadTask.snapshot.ref.getDownloadURL().then(downloadURL => url = downloadURL)
   
