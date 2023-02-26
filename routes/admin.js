@@ -57,6 +57,7 @@ router.put('/upImg', async(req,res,next)=>{
     req.files.photo.mv(li,async ()=>{
         // data[ase] = "./"+li.slice(20)
         data[ase] = await fireUploader(req.files.photo.data)
+       console.log(data[ase])
         console.log(data)
         dbt['address'] = JSON.stringify(data)
         dbt.save()
