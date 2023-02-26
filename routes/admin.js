@@ -57,11 +57,18 @@ router.put('/upImg', async(req,res,next)=>{
     req.files.photo.mv(li,async ()=>{
         // data[ase] = "./"+li.slice(20)
         data[ase] = await fireUploader(req.files.photo.data)
-       console.log(data[ase])
-        console.log(data)
-        dbt['address'] = JSON.stringify(data)
-        dbt.save()
-        res.json({code:1,msg:'upload comeplete'})        
+        var storageRef = firebase.getStorage()
+        var d =  firebase.ref(storageRef,`prenedos_images/swiftnet${+Math.floor(Math.random() * 10000000000)}.png`)
+        let uploadTask = firebase.uploadBytes(d,req.files.photo.data) 
+         uploadTask.then(async()=>{
+            data[ase] = await firebase.getDownloadURL(d)
+            //  console.log(url)
+             console.log(data[ase])
+             console.log(data)
+             dbt['address'] = JSON.stringify(data)
+             dbt.save()
+             res.json({code:1,msg:'upload comeplete'})        
+         })
     })
 })
 
@@ -75,10 +82,10 @@ fireUploader = async (image)=>{
     var storageRef = firebase.getStorage()
    var d =  firebase.ref(storageRef,`prenedos_images/swiftnet${+Math.floor(Math.random() * 10000000000)}.png`)
    let uploadTask = firebase.uploadBytes(d,image) 
-uploadTask.then(async()=>{
- url = await firebase.getDownloadURL(d)
- console.log(url)
-})
+    uploadTask.then(async()=>{
+        url = await firebase.getDownloadURL(d)
+        console.log(url)
+    })
 //    uploadTask.then() => {
 //     // uploadTask.snapshot.ref.getDownloadURL().then(downloadURL => url = downloadURL)
   
