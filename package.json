@@ -4,11 +4,15 @@
   "description": "[pk",
   "main": "server.js",
   "dependencies": {
+    "@firebase/app": "^0.9.3",
+    "@firebase/storage": "^0.11.1",
+    "cloudinary": "^1.34.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-fileupload": "^1.4.0",
     "express-fileuploader": "^0.0.7",
     "express-handlebars": "^6.0.7",
+    "firebase": "^9.3.0",
     "mongoose": "^6.9.1"
   },
   "devDependencies": {},

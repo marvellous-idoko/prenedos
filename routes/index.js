@@ -10,12 +10,16 @@ const router = express.Router();
 // (async function(){
 //        dbt = await db.findById('630d2084647428d2d665306f')
 // })();
-
+(async function(){
+     dbt = await db.findById('630d2084647428d2d665306f')
+    //  dbt = await db.findById('630d4d987a298eb00f946dbb')
+     
+})();
 router.get('/', async(req, res, next) => {
   res.redirect('home')
 }) 
  router.get('/home', async(req, res, next) => {
-    let dbt = await db.findById('630d2084647428d2d665306f')
+    // let dbt = await db.findById('630d2084647428d2d665306f')
     let data = JSON.parse(dbt['address'])
   res.render('home', { title: 'products',
                     headingOne: data['firstHeading'],
@@ -52,7 +56,7 @@ router.get('/contact', (req, res, next) => {
     res.render('contact-us', { cntUs:true });
   });
   router.get('/projects', async(req, res, next) => {
-    let dbt = await db.findById('630d2084647428d2d665306f')
+    // let dbt = await db.findById('630d2084647428d2d665306f')
     let data = JSON.parse(dbt['address'])
     res.render('projects', {
              prjcts:true,
@@ -111,7 +115,7 @@ router.get('/contact', (req, res, next) => {
   });
 
   router.get('/events', async(req, res, next) => {
-    let dbt = await db.findById('630d2084647428d2d665306f')
+    // let dbt = await db.findById('630d2084647428d2d665306f')
     let data = JSON.parse(dbt['address'])
      res.render('events', { prjcts:true,
       firstEventTitle:data['firstEventTitle'],

@@ -1,4 +1,6 @@
-const srv = 'https://prenedos.herokuapp.com/' 
+// const srv = 'https://prenedos.herokuapp.com/admin/' 
+const srv = 'http://localhost:3000/admin/' 
+
 const formData = new FormData();
 function sender(urlm, il) {
     let y = { case: urlm, value: il }
