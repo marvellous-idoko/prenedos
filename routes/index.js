@@ -6,7 +6,7 @@ const db = require("../schema/database");
 // const rootDir = require('../util/path');
 
 const router = express.Router();
-// let dbt  ;
+let dbt ;
 // (async function(){
 //        dbt = await db.findById('630d2084647428d2d665306f')
 // })();
