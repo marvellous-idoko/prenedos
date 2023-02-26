@@ -10,16 +10,18 @@ let dbt ;
 // (async function(){
 //        dbt = await db.findById('630d2084647428d2d665306f')
 // })();
-(async function(){
+async function fd(){
     dbt =   await db.findById('630d2084647428d2d665306f')
     //  dbt = await db.findById('630d4d987a298eb00f946dbb')
      
-})();
+}
+fd();
 router.get('/', async(req, res, next) => {
   res.redirect('home')
 }) 
  router.get('/home', async(req, res, next) => {
     // let dbt = await db.findById('630d2084647428d2d665306f')
+  fd()
     let data = JSON.parse(dbt['address'])
     console.log(data)
   res.render('home', { title: 'products',
@@ -50,14 +52,18 @@ router.get('/', async(req, res, next) => {
 });
 
 router.get('/aboutUs', (req, res, next) => {
-    res.render('about-us', { data: '',abtUs:true});
+  fd()
+  res.render('about-us', { data: '',abtUs:true});
   });
   
 router.get('/contact', (req, res, next) => {
+  fd()
     res.render('contact-us', { cntUs:true });
   });
   router.get('/projects', async(req, res, next) => {
     // let dbt = await db.findById('630d2084647428d2d665306f')
+    fd()
+  
     let data = JSON.parse(dbt['address'])
     res.render('projects', {
              prjcts:true,
@@ -117,7 +123,8 @@ router.get('/contact', (req, res, next) => {
 
   router.get('/events', async(req, res, next) => {
     // let dbt = await db.findById('630d2084647428d2d665306f')
-    let data = JSON.parse(dbt['address'])
+  fd()
+  let data = JSON.parse(dbt['address'])
      res.render('events', { prjcts:true,
       firstEventTitle:data['firstEventTitle'],
       firstEventDes:data['firstEventDes'],
@@ -168,10 +175,12 @@ router.get('/contact', (req, res, next) => {
       sixthGalleryDes:data['sixthGalleryDes'],
       sixthGalleryImg:data['sixthGalleryImg']
    });
+ 
   });
 
   router.get('/faqs', (req, res, next) => {
-    res.render('faqs', { faqs:true });
+  fd()
+  res.render('faqs', { faqs:true });
   });
 
   
