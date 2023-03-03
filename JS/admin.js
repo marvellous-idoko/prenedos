@@ -1,5 +1,5 @@
-// const srv = 'https://prenedos.herokuapp.com/admin/' 
-const srv = 'http://localhost:3000/admin/' 
+const srv = 'https://prenedos.herokuapp.com/admin/' 
+// const srv = 'http://localhost:3000/admin/' 
 
 const formData = new FormData();
 function sender(urlm, il) {
