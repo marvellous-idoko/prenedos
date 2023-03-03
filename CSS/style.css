@@ -1,6 +1,7 @@
-:root{
-    --purple:#8e24aa;
+:root {
+    --purple: #8e24aa;
 }
+
 .flex {
     display: flex;
     place-content: center;
@@ -45,7 +46,8 @@ h1#bgTxt {
 .secPad {
     padding: 0 10vw;
 }
-footer > article{
+
+footer>article {
     line-height: 1.4;
 }
 
@@ -71,11 +73,13 @@ html {
 
     }
 }
+
 @keyframes lok {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
@@ -92,6 +96,7 @@ html {
 
     }
 }
+
 @keyframes olo {
     from {
         transform: translateY(80px);
@@ -107,11 +112,13 @@ nav a.flex:hover {
     transition: background-color, .38s cubic-bezier(0.215, 0.610, 0.355, 1);
     background-color: rgba(255, 255, 255, 0.233);
 }
-nav a.flex{
+
+nav a.flex {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     min-width: 80px;
 }
+
 nav a.flex:hover {
     transition: background-color, .38s cubic-bezier(0.215, 0.610, 0.355, 1);
     background-color: rgba(255, 255, 255, 0.233);
@@ -127,14 +134,16 @@ button#jjk {
     outline: none;
     border: 0;
 }
-button#bnh{
-    padding:10px 20px ;
+
+button#bnh {
+    padding: 10px 20px;
     cursor: pointer;
     transition: background-color .25s;
     border-radius: 30px;
     border: 2px solid white;
 
 }
+
 button.anik {
     animation-delay: 2.4s;
     background-color: white;
@@ -164,9 +173,10 @@ button.anik {
 div.serv>figure>div:hover {
     opacity: 1;
     transition: opacity 1.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    
+
 }
-    div.serv>figure>div {
+
+div.serv>figure>div {
     opacity: 0;
     height: inherit;
     flex-direction: column;
@@ -175,13 +185,16 @@ div.serv>figure>div:hover {
     /* background-image: linear-gradient(45deg, black, transparent); */
     border-radius: 15px;
 }
-div#iop{
+
+div#iop {
     height: 15em;
 }
-section.paralax>div{
-    height:65vh;
-     background-image:linear-gradient(180deg,rgba(128, 0, 128, 0.507),rgba(255, 166, 0, 0.466))
+
+section.paralax>div {
+    height: 65vh;
+    background-image: linear-gradient(180deg, rgba(128, 0, 128, 0.507), rgba(255, 166, 0, 0.466))
 }
+
 .custom-shape-divider-top-1675691460 {
     position: absolute;
     top: 0;
@@ -190,30 +203,43 @@ section.paralax>div{
     overflow: hidden;
     line-height: 0;
 }
-.bigBtn{
+
+.bigBtn {}
+
+article.anik {
+    margin-bottom: 5px;
 
 }
-article.anik{
-    margin-bottom: 5px;
-    
-}
-    .bigBtn:hover{
+
+.bigBtn:hover {
     border: 2px solid white;
     color: white;
     background-color: transparent;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     font-family: 'Secular One', sans-serif;
 }
-ul.flex, ul.flex>li,ul,li {
+
+ul.flex,
+ul.flex>li,
+ul,
+li {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-ul.flex figure>img{
+
+ul.flex figure>img {
     height: 5em;
 }
+
 .custom-shape-divider-top-1675737050 {
     position: absolute;
     top: 0;
@@ -222,33 +248,41 @@ ul.flex figure>img{
     overflow: hidden;
     line-height: 0;
 }
-footer a{
+
+footer a {
     padding: .3em;
     border-radius: 3px;
 }
-footer a:hover{
+
+footer a:hover {
     color: #ea6015;
     background-color: white;
     transition: all .64s ease;
 }
-a{
-    text-decoration:none;
-    color:inherit;
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
-li>.iw{
-    margin:1.3em 0;
+
+li>.iw {
+    margin: 1.3em 0;
 }
-.lis{
-    margin:.5em 0;
+
+.lis {
+    margin: .5em 0;
 
 }
-footer div ul.flex{
+
+footer div ul.flex {
     place-items: baseline;
 }
-footer div ul.flex>li{
-    flex:1;
+
+footer div ul.flex>li {
+    flex: 1;
     margin: 1em 2em;
 }
+
 .custom-shape-divider-top-1675737050 svg {
     position: relative;
     display: block;
@@ -259,6 +293,7 @@ footer div ul.flex>li{
 .custom-shape-divider-top-1675737050 .shape-fill {
     fill: #FFFFFF;
 }
+
 .custom-shape-divider-top-1675692162 {
     position: absolute;
     top: 0;
@@ -267,9 +302,11 @@ footer div ul.flex>li{
     overflow: hidden;
     line-height: 0;
 }
-footer{
+
+footer {
     background-image: url(../img/electricity.jpg);
 }
+
 .custom-shape-divider-top-1675692162 svg {
     position: relative;
     display: block;
@@ -280,6 +317,7 @@ footer{
 .custom-shape-divider-top-1675692162 .shape-fill {
     fill: transparent;
 }
+
 .custom-shape-divider-top-1675691460 svg {
     position: relative;
     display: block;
@@ -290,23 +328,31 @@ footer{
 .custom-shape-divider-top-1675691460 .shape-fill {
     fill: #FFFFFF;
 }
-.curvers{
+
+.curvers {
     width: 100%;
     height: inherit;
     background: white;
 }
-div#iop{
-    
+
+div#iop {}
+
+
+li.slider>button {
+    color: red;
+    font-size: 25px;
 }
-.paralax{
+
+.paralax {
     background-image: url(../img/ks.jpeg);
-    height: calc(100% + 5vh); 
+    height: calc(100% + 5vh);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-div.serv >figure{
+
+div.serv>figure {
     /* background-image: url(../img/dfe.jpeg); */
     height: 12em;
     margin: 2px;
@@ -314,13 +360,14 @@ div.serv >figure{
     color: white;
 }
 
-.curvCor{
+.curvCor {
     border-radius: 15px;
 }
+
 div.serv {
     /* color: white; */
     width: 20em;
-    cursor:default;
+    cursor: default;
     margin: 10px;
     opacity: 0;
     animation: lok 1s ease 3s forwards;
