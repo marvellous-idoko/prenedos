@@ -57,6 +57,22 @@ div.tab>ul>li {
 .showwq{
     display: block!important;
 }
+#slideCarrier1{
+    background-image: linear-gradient(45deg,orange,var(--purple));
+    overflow: auto;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:0;
+    color: white;
+    transition:all .25s;
+
+}
+#slideCarrier1, #slideCarrier1 li{
+    display: none;
+}
 #slideCarrier{
     background-image: linear-gradient(45deg,orange,var(--purple));
     overflow: auto;
