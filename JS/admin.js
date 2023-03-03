@@ -1,5 +1,5 @@
-const srv = 'https://prenedos.herokuapp.com/admin/' 
-// const srv = 'http://localhost:3000/admin/' 
+// const srv = 'https://prenedos.herokuapp.com/admin/' 
+const srv = 'http://localhost:3000/admin/' 
 
 const formData = new FormData();
 function sender(urlm, il) {
@@ -38,7 +38,12 @@ function uplImg(whatsx) {
         formData.append('value', 'secSlideImg')
         sendImg(formData)
     }
-    
+    else if (whatsx == 'firstServImg') {
+
+        formData.append('photo', document.getElementById('firstServImg').files[0]);
+        formData.append('value', 'firstServImg')
+        sendImg(formData)
+    }
     
     else if (whatsx == 'firstOngoingProjectImg') {
         formData.append('photo', document.getElementById('firstOngoingProjectImg').files[0]);

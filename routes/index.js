@@ -11,8 +11,8 @@ let dbt ;
 //        dbt = await db.findById('630d2084647428d2d665306f')
 // })();
 async function fd(){
-    dbt =   await db.findById('630d2084647428d2d665306f')
-    //  dbt = await db.findById('630d4d987a298eb00f946dbb')
+    // dbt =   await db.findById('630d2084647428d2d665306f')
+     dbt = await db.findById('630d4d987a298eb00f946dbb')
      
 }
 fd();
@@ -36,16 +36,23 @@ router.get('/', async(req, res, next) => {
                     paraTwo2: data['secondPara2'],
                     paraTwo3: data['secondPara3'],
                     svc1title: data['svc1title'],
+                    firstServImg:data['firstServImg'],
                     svc1des: data['svc1des'],
                     svc2title: data['svc2title'],
+                    secServImg:data['secServImg'],
+
                     svc2des: data['svc2des'],
                     svc3title: data['svc3title'],
+                    thirdServImg:data['thirdServImg'],
                     svc3des: data['svc3des'],
                     svc4title: data['svc4title'],
+                    fourthServImg:data['fourthServImg'],
                     svc4des: data['svc4des'],
                     svc5title: data['svc5title'],
+                    fifthServImg:data['fifthServImg'],
                     svc5des: data['svc5des'],
                     svc6title: data['svc6title'],
+                    sixthServImg:data['sixthServImg'],
                     svc6des: data['svc6des'],
                     // svc1des: data['svc1des'],
                 });

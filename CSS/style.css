@@ -307,7 +307,7 @@ div#iop{
     background-size: cover;
 }
 div.serv >figure{
-    background-image: url(../img/dfe.jpeg);
+    /* background-image: url(../img/dfe.jpeg); */
     height: 12em;
     margin: 2px;
     width: inherit;
