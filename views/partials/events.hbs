@@ -19,7 +19,7 @@
                 </li>
                 <li class="curvCor bg" onclick="pode()" style="background-image: url({{secGalleryTitle}});">
                     <div>
-                        <h3>{{secGalleryTitle}}</h3>
+                        <h3>{{secondGalleryDes}}</h3>
                     </div>
                 </li>
                 <li class="curvCor bg" onclick="pode()" style="background-image: url({{thirdGalleryTitle}});">
@@ -87,31 +87,26 @@
             <li class="slider">
                 <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="500" class="curvCor"  src="../../img/917-9179948_our-mission-company-vision.png" alt="">
+                    <img height="500" class="curvCor"  src="{{firstGalleryImg}}" alt="">
                     <figcaption>
-                        <h3>Eventos</h3>
+                        <h3>{{firstGalleryTitle}}</h3>
                         <article>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatem impedit in. Error
-                            ex sequi praesentium quidem sunt fuga nisi accusamus perferendis aut vero, provident
-                            tempore, eos in cumque dolores!
+                            {{firstGalleryDes}}
                         </article>
                     </figcaption>
                     <div class="flex" style="place-content: space-around;">
                         <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
                     </div>
                 </figure>
-
             </li>
             <li class="slider">
                 <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="500" class="curvCor"  src="../../img/dfe.jpeg" alt="">
+                    <img height="500" class="curvCor"  src="{{secGalleryImg}}" alt="">
                     <figcaption>
-                        <h3>Eventos</h3>
+                        <h3>{{secondGalleryDes}}</h3>
                         <article>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatem impedit in. Error
-                            ex sequi praesentium quidem sunt fuga nisi accusamus perferendis aut vero, provident
-                            tempore, eos in cumque dolores!
+                            {{secondGalleryDes}}
                         </article>
                     </figcaption>
                     <div class="flex" style="place-content: space-around;">
@@ -123,13 +118,60 @@
             <li class="slider flex">
                 <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="500" class="curvCor"  src="../../img/mKmGmNm0_400x400.jpg" alt="">
+                    <img height="500" class="curvCor"  src="{{thirdGalleryImg}}" alt="">
                     <figcaption>
-                        <h3>Eventos</h3>
+                        <h3>{{thirdGalleryTitle}}</h3>
                         <article>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatem impedit in. Error
-                            ex sequi praesentium quidem sunt fuga nisi accusamus perferendis aut vero, provident
-                            tempore, eos in cumque dolores!
+                           {{thirdGalleryDes}}
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+            <li class="slider">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="{{fourthGalleryImg}}" alt="">
+                    <figcaption>
+                        <h3>{{fourthGalleryTitle}}</h3>
+                        <article>
+                            {{fourthGalleryDes}}
+
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+            <li class="slider">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="{{fifthGalleryImg}}" alt="">
+                    <figcaption>
+                        <h3>{{fifthGalleryTitle}}</h3>
+                        <article>
+                            {{fifthGalleryDes}}
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+            <li class="slider flex">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="{{sixthGalleryImg}}" alt="">
+                    <figcaption>
+                        <h3>{{sixthGalleryTitle}}</h3>
+                        <article>
+                            {{sixthGalleryDes}}
                         </article>
                     </figcaption>
                     <div class="flex" style="place-content: space-around;">
@@ -142,17 +184,121 @@
         </ul>
     </div>
 </section>
+<section id="slideCarrier1">
+    <div>
+        <ul>
+            <li class="slider">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="{{firstEventImg}}" alt="">
+                    <figcaption>
+                        <h3>{{firstEventTitle}}</h3>
+                        <article>
+                            {{firstEventDes}}
+
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+            <li class="slider">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="{{secondEventImg}}" alt="">
+                    <figcaption>
+                        <h3>{{secEventTitle}}</h3>
+                        <article>
+                            {{secondEventDes}}
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+            <li class="slider flex">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="{{thirdEventImg}}" alt="">
+                    <figcaption>
+                        <h3>{{thirdEventTitle}}</h3>
+                        <article>
+                            {{thirdEventDes}}
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+            <li class="slider">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="{{fourthEventImg}}" alt="">
+                    <figcaption>
+                        <h3>{{fourthEventTitle}}</h3>
+                        <article>
+                            {{fourthEventDes}}
+
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+            <li class="slider">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="{{fifthEventImg}}" alt="">
+                    <figcaption>
+                        <h3>{{fifthEventTitle}}</h3>
+                        <article>
+                            {{fifthEventDes}}
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+            <li class="slider flex">
+                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <figure class="flex" style="flex-direction: column;">
+                    <img height="500" class="curvCor"  src="{{sixthEventImg}}" alt="">
+                    <figcaption>
+                        <h3>{{sixthEventTitle}}</h3>
+                        <article>
+                            {{sixthEventDes}}
+                        </article>
+                    </figcaption>
+                    <div class="flex" style="place-content: space-around;">
+                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                    </div>
+                </figure>
+
+            </li>
+        </ul>
+    </div>
+</section>
 <script>
     let y = document.getElementsByClassName('slider')
     let countre = 0
 
-    function pode() {
-        document.getElementById('slideCarrier').style.display = 'block'
+    function pode(p) {
+        document.getElementById(p).style.display = 'block'
         y.item(countre).classList.add('showwq')
 
     }
-    function clos() {
-        document.getElementById('slideCarrier').style.display = 'none'
+    function clos(p) {
+        document.getElementById(p).style.display = 'none'
     }
     function nxt() {
        // countre++
