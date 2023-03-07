@@ -187,7 +187,7 @@
 <section id="slideCarrier1">
     <div>
         <ul>
-            <li class="slider">
+            <li class="slider1">
                 <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{firstEventImg}}" alt="">
@@ -199,12 +199,12 @@
                         </article>
                     </figcaption>
                     <div class="flex" style="place-content: space-around;">
-                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                        <button onclick="prev1()">Prev</button><button onclick="nxt1()">Next</button>
                     </div>
                 </figure>
 
             </li>
-            <li class="slider">
+            <li class="slider1">
                 <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{secondEventImg}}" alt="">
@@ -215,12 +215,12 @@
                         </article>
                     </figcaption>
                     <div class="flex" style="place-content: space-around;">
-                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                        <button onclick="prev1()">Prev</button><button onclick="nxt1()">Next</button>
                     </div>
                 </figure>
 
             </li>
-            <li class="slider flex">
+            <li class="slider1">
                 <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{thirdEventImg}}" alt="">
@@ -231,12 +231,12 @@
                         </article>
                     </figcaption>
                     <div class="flex" style="place-content: space-around;">
-                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                        <button onclick="prev1()">Prev</button><button onclick="nxt1()">Next</button>
                     </div>
                 </figure>
 
             </li>
-            <li class="slider">
+            <li class="slider1">
                 <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{fourthEventImg}}" alt="">
@@ -248,12 +248,12 @@
                         </article>
                     </figcaption>
                     <div class="flex" style="place-content: space-around;">
-                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                        <button onclick="prev1()">Prev</button><button onclick="nxt1()">Next</button>
                     </div>
                 </figure>
 
             </li>
-            <li class="slider">
+            <li class="slider1">
                 <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{fifthEventImg}}" alt="">
@@ -264,12 +264,12 @@
                         </article>
                     </figcaption>
                     <div class="flex">
-                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                        <button onclick="prev1()">Prev</button><button onclick="nxt1()">Next</button>
                     </div>
                 </figure>
 
             </li>
-            <li class="slider">
+            <li class="slider1">
                 <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{sixthEventImg}}" alt="">
@@ -280,7 +280,7 @@
                         </article>
                     </figcaption>
                     <div class="flex" style="place-content: space-around;">
-                        <button onclick="prev()">Prev</button><button onclick="nxt()">Next</button>
+                        <button onclick="prev1()">Prev</button><button onclick="nxt1()">Next</button>
                     </div>
                 </figure>
 
@@ -290,11 +290,11 @@
 </section>
 <script>
     let y = document.getElementsByClassName('slider')
+    let yo = document.getElementsByClassName('slider1')
     let countre = 0
 
     function pode(p) {
         y = document.getElementsByClassName('slider') 
-
         document.getElementById(p).style.display = 'block'
         y.item(countre).classList.add('showwq')
 
@@ -303,18 +303,23 @@
         document.getElementById(p).style.display = 'none'
     }
     function nxt() {
-       // countre++
-       // console.log(countre)
-       // if (countre-- != -1) {
-        //else 
-            y.item(countre).classList.remove('showwq')
+                y.item(countre).classList.remove('showwq')
             countre++
             if(countre == y.length){
                 countre = 0
             }
             y.item(countre).classList.add('showwq')
         
-        // y.item(countre).classList.add('showwq')
+    }
+
+    function nxt1() {
+                yo.item(countre).classList.remove('showwq')
+            countre++
+            if(countre == yo.length){
+                countre = 0
+            }
+            yo.item(countre).classList.add('showwq')
+        
     }
     function prev() {
          y.item(countre).classList.remove('showwq')
@@ -324,9 +329,17 @@
             }
             y.item(countre).classList.add('showwq')
     }
+    
+    function prev1() {
+         yo.item(countre).classList.remove('showwq')
+            countre--
+            if(countre == -1){
+                countre = yo.length - 1
+            }
+            yo.item(countre).classList.add('showwq')
+    }
     document.getElementById('events').click()
     function fg(sas) {
-        console.log(sas)
         // buttons
         document.getElementById('gallery').classList.remove('active')
         document.getElementById('events').classList.remove('active')
