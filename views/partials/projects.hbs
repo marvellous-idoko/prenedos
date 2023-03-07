@@ -86,7 +86,7 @@
             <li class="slider">
                 <button onclick="clos('slideCarrier')" style="float:right;margin: 0 50px 0 0;">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="400" class="curvCor"  src="{{secOngoingProjectImg}}" alt="">
+                    <img height="400" class="curvCor"  src="{{secondOngoingProjectImg}}" alt="">
                     <figcaption>
                         <h3>{{secondOngoingProjectDes}}</h3>
                         <article>
@@ -274,12 +274,12 @@
 </section>
 
 <script>
-    let y = document.getElementsByClassName('slider')
+    let y;
     let countre = 0
-    function pode(p) {
+    function pode(p) {  
+        y = document.getElementsByClassName('slider') 
         document.getElementById(p).style.display = 'block'
         y.item(countre).classList.add('showwq')
-
     }
     function clos(p) {
         document.getElementById(p).style.display = 'none'
