@@ -12,6 +12,7 @@ function sender(urlm, il) {
         },
         body: JSON.stringify(y),
     })
+
         .then((response) => response.json())
         .then((data) => {
             console.log('Success:', data);

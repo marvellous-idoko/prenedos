@@ -100,7 +100,7 @@
                 </figure>
             </li>
             <li class="slider">
-                <button onclick="clos('slideCarrier')" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos('slideCarrier')" >X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{secGalleryImg}}" alt="">
                     <figcaption>
@@ -115,8 +115,8 @@
                 </figure>
 
             </li>
-            <li class="slider flex">
-                <button onclick="clos('slideCarrier')" style="float:right;margin: 0 50px 0 0;">X</button>
+            <li class="slider">
+                <button onclick="clos('slideCarrier')" >X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{thirdGalleryImg}}" alt="">
                     <figcaption>
@@ -132,7 +132,7 @@
 
             </li>
             <li class="slider">
-                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos()" >X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{fourthGalleryImg}}" alt="">
                     <figcaption>
@@ -149,7 +149,7 @@
 
             </li>
             <li class="slider">
-                <button onclick="clos('slideCarrier')" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos('slideCarrier')" >X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{fifthGalleryImg}}" alt="">
                     <figcaption>
@@ -164,8 +164,8 @@
                 </figure>
 
             </li>
-            <li class="slider flex">
-                <button onclick="clos('slideCarrier')" style="float:right;margin: 0 50px 0 0;">X</button>
+            <li class="slider">
+                <button onclick="clos('slideCarrier')" >X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{sixthGalleryImg}}" alt="">
                     <figcaption>
@@ -188,7 +188,7 @@
     <div>
         <ul>
             <li class="slider1">
-                <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos('slideCarrier1')" >X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{firstEventImg}}" alt="">
                     <figcaption>
@@ -205,7 +205,7 @@
 
             </li>
             <li class="slider1">
-                <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos('slideCarrier1')" >X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{secondEventImg}}" alt="">
                     <figcaption>
@@ -221,7 +221,7 @@
 
             </li>
             <li class="slider1">
-                <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos('slideCarrier1')" >X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{thirdEventImg}}" alt="">
                     <figcaption>
@@ -237,7 +237,7 @@
 
             </li>
             <li class="slider1">
-                <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos('slideCarrier1')" >X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{fourthEventImg}}" alt="">
                     <figcaption>
@@ -254,7 +254,7 @@
 
             </li>
             <li class="slider1">
-                <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos('slideCarrier1')" >X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{fifthEventImg}}" alt="">
                     <figcaption>
@@ -270,7 +270,7 @@
 
             </li>
             <li class="slider1">
-                <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos('slideCarrier1')" >X</button>
                 <figure class="flex" style="flex-direction: column;">
                     <img height="400" class="curvCor"  src="{{sixthEventImg}}" alt="">
                     <figcaption>
@@ -294,8 +294,14 @@
     let countre = 0
 
     function pode(p) {
-        y = document.getElementsByClassName('slider') 
-        y = document.getElementsByClassName('slider') 
+ //       y = document.getElementsByClassName('slider') 
+   //     y = document.getElementsByClassName('slider') 
+   
+        for (let index = 0; index < 6; index++) {
+            y.item(index).classList.remove('showwq');
+            yo.item(index).classList.remove('showwq');
+
+        }
         document.getElementById(p).style.display = 'block'
         y.item(countre).classList.add('showwq')
         yo.item(countre).classList.add('showwq')
@@ -303,6 +309,9 @@
     }
     function clos(p) {
         document.getElementById(p).style.display = 'none'
+        y.item(countre).classList.remove('showwq')
+        yo.item(countre).classList.remove('showwq')
+
     }
     function nxt() {
                 y.item(countre).classList.remove('showwq')

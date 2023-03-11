@@ -30,4 +30,11 @@ function displayer() {
 
 }
 displayer()
+// document.body.addEventListener('scroll',dg())
 
+function dg(){
+    if(document.body.scrollHeight == 2179){
+        document.getElementById('df').style.display = "grid";
+    }
+};
+dg()

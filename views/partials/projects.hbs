@@ -1,67 +1,100 @@
 <section style="background-color: white;">
-    
+
     <div class="secPad">
-    <div>
-        <h1>Projects</h1>
-    </div>
-    <div>
-        <ul class="flex">
-            <li  id="ongoing" onclick="fg('ongoing')">Ongoing</li>
-            <li  id="completed" onclick="fg('completed')" class="active">Completed</li>
-        </ul>
-    </div>
-    <div class="tab" id="ongoing1">
-        <ul>    
-            <li  class="curvCor bg"  onclick="pode('slideCarrier')"  
-            style="background-image: url({{firstOngoingProjectImg}});">
-                <div>
-                <h3>{{firstOngoingProjectTitle}}</h3>
-                </div>
-            </li>
-            <li  class="curvCor  bg"  onclick="pode('slideCarrier')"  style="background-image: url({{secondOngoingProjectImg}});">
-                <div><h3>{{secOngoingProjectTitle}}</h3></div>
-            </li>
-            <li  class="curvCor  bg"  onclick="pode('slideCarrier')"  style="background-image: url({{thirdOngoingProjectImg}});">
-                <div><h3>{{thirdOngoingProjectTitle}}</h3></div>
-            </li>
-            <li  class="curvCor  bg"  onclick="pode('slideCarrier')"  style="background-image: url({{fourthOngoingProjectImg}});">
-                <div><h3>{{fourthOngoingProjectTitle}}</h3></div>
-            </li>
-           <li  class="curvCor  bg"  onclick="pode('slideCarrier')"  style="background-image: url({{fifthOngoingProjectImg}});">
-                <div><h3>{{fifthOngoingProjectTitle}}</h3></div>
-            </li>
+        <div>
+            <h1>Projects</h1>
+        </div>
+        <div>
+            <ul class="flex">
+                <li id="ongoing" onclick="fg('ongoing')">Ongoing</li>
+                <li id="completed" onclick="fg('completed')" class="active">Completed</li>
+            </ul>
+        </div>
+        <div class="tab" id="ongoing1">
+            <ul>
+                <li class="curvCor bg" onclick="pode('slideCarrier')"
+                    style="background-image: url({{firstOngoingProjectImg}});">
+                    <div>
+                        <h3>{{firstOngoingProjectTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor  bg" onclick="pode('slideCarrier')"
+                    style="background-image: url({{secondOngoingProjectImg}});">
+                    <div>
+                        <h3>{{secOngoingProjectTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor  bg" onclick="pode('slideCarrier')"
+                    style="background-image: url({{thirdOngoingProjectImg}});">
+                    <div>
+                        <h3>{{thirdOngoingProjectTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor  bg" onclick="pode('slideCarrier')"
+                    style="background-image: url({{fourthOngoingProjectImg}});">
+                    <div>
+                        <h3>{{fourthOngoingProjectTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor  bg" onclick="pode('slideCarrier')"
+                    style="background-image: url({{fifthOngoingProjectImg}});">
+                    <div>
+                        <h3>{{fifthOngoingProjectTitle}}</h3>
+                    </div>
+                </li>
 
-             {{#if sixthOngoingProjectTitle}}
+                {{#if sixthOngoingProjectTitle}}
 
-            <li  class="curvCor  bg"  onclick="pode('slideCarrier')"  style="background-image: url({{sixthOngoingProjectImg}});">
-                <div><h3>{{sixthOngoingProjectTitle}}</h3></div>
-            </li>
-         {{/if}}
-        
-        </ul>
-    </div>
-    <div  class="tab" id="completed1">
-        <ul>
-            <li  class="curvCor  bg"  onclick="pode('slideCarrier1')"  style="background-image: url({{firstCompletedProjectImg}});">
-                <div><h3>{{firstCompletedProjectTitle}}</h3></div>
-            </li>
-            <li  class="curvCor  bg"  onclick="pode('slideCarrier1')"  style="background-image: url({{secondCompletedProjectImg}});">
-                <div><h3>{{secondCompletedProjectTitle}}</h3></div>
-            </li>
-            <li  class="curvCor  bg"  onclick="pode('slideCarrier1')"  style="background-image: url({{thirdCompletedProjectImg}});">
-                <div><h3>{{thirdCompletedProjectTitle}}</h3></div>
-            </li>
-            <li  class="curvCor  bg"  onclick="pode('slideCarrier1')"  style="background-image: url({{fourthCompletedProjectImg}});">
-                <div><h3>{{fourthCompletedProjectTitle}}</h3></div>
-            </li>
-            <li  class="curvCor  bg"  onclick="pode('slideCarrier1')"  style="background-image: url({{fifthCompletedProjectImg}});">
-                <div><h3>{{fifthCompletedProjectTitle}}</h3></div>
-            </li>
-            <li  class="curvCor  bg"  onclick="pode('slideCarrier1')"  style="background-image: url({{sixthCompletedProjectImg}});">
-                <div><h3>{{sixthCompletedProjectTitle}}</h3></div>
-            </li>
-        </ul>
-    </div>
+                <li class="curvCor  bg" onclick="pode('slideCarrier')"
+                    style="background-image: url({{sixthOngoingProjectImg}});">
+                    <div>
+                        <h3>{{sixthOngoingProjectTitle}}</h3>
+                    </div>
+                </li>
+                {{/if}}
+
+            </ul>
+        </div>
+        <div class="tab" id="completed1">
+            <ul>
+                <li class="curvCor  bg" onclick="pode('slideCarrier1')"
+                    style="background-image: url({{firstCompletedProjectImg}});">
+                    <div>
+                        <h3>{{firstCompletedProjectTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor  bg" onclick="pode('slideCarrier1')"
+                    style="background-image: url({{secondCompletedProjectImg}});">
+                    <div>
+                        <h3>{{secondCompletedProjectTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor  bg" onclick="pode('slideCarrier1')"
+                    style="background-image: url({{thirdCompletedProjectImg}});">
+                    <div>
+                        <h3>{{thirdCompletedProjectTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor  bg" onclick="pode('slideCarrier1')"
+                    style="background-image: url({{fourthCompletedProjectImg}});">
+                    <div>
+                        <h3>{{fourthCompletedProjectTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor  bg" onclick="pode('slideCarrier1')"
+                    style="background-image: url({{fifthCompletedProjectImg}});">
+                    <div>
+                        <h3>{{fifthCompletedProjectTitle}}</h3>
+                    </div>
+                </li>
+                <li class="curvCor  bg" onclick="pode('slideCarrier1')"
+                    style="background-image: url({{sixthCompletedProjectImg}});">
+                    <div>
+                        <h3>{{sixthCompletedProjectTitle}}</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
 
@@ -71,7 +104,7 @@
             <li class="slider">
                 <button onclick="clos('slideCarrier')">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="400" class="curvCor"  src="{{firstOngoingProjectImg}}" alt="">
+                    <img height="400" class="curvCor" src="{{firstOngoingProjectImg}}" alt="">
                     <figcaption>
                         <h3>{{firstOngoingProjectTitle}}</h3>
                         <article>
@@ -84,9 +117,9 @@
                 </figure>
             </li>
             <li class="slider">
-                <button onclick="clos('slideCarrier')" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos('slideCarrier')">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="400" class="curvCor"  src="{{secondOngoingProjectImg}}" alt="">
+                    <img height="400" class="curvCor" src="{{secondOngoingProjectImg}}" alt="">
                     <figcaption>
                         <h3>{{secondOngoingProjectDes}}</h3>
                         <article>
@@ -100,13 +133,13 @@
 
             </li>
             <li class="slider flex">
-                <button onclick="clos('slideCarrier')" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos('slideCarrier')">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="400" class="curvCor"  src="{{thirdOngoingProjectImg}}" alt="">
+                    <img height="400" class="curvCor" src="{{thirdOngoingProjectImg}}" alt="">
                     <figcaption>
                         <h3>{{thirdOngoingProjectTitle}}</h3>
                         <article>
-                           {{thirdOngoingProjectDes}}
+                            {{thirdOngoingProjectDes}}
                         </article>
                     </figcaption>
                     <div class="flex" style="place-content: space-around;">
@@ -116,9 +149,9 @@
 
             </li>
             <li class="slider">
-                <button onclick="clos()" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos()">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="400" class="curvCor"  src="{{fourthOngoingProjectImg}}" alt="">
+                    <img height="400" class="curvCor" src="{{fourthOngoingProjectImg}}" alt="">
                     <figcaption>
                         <h3>{{fourthOngoingProjectTitle}}</h3>
                         <article>
@@ -133,9 +166,9 @@
 
             </li>
             <li class="slider">
-                <button onclick="clos('slideCarrier')" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos('slideCarrier')">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="400" class="curvCor"  src="{{fifthOngoingProjectImg}}" alt="">
+                    <img height="400" class="curvCor" src="{{fifthOngoingProjectImg}}" alt="">
                     <figcaption>
                         <h3>{{fifthOngoingProjectTitle}}</h3>
                         <article>
@@ -149,9 +182,9 @@
 
             </li>
             <li class="slider flex">
-                <button onclick="clos('slideCarrier')" style="float:right;margin: 0 50px 0 0;">X</button>
+                <button onclick="clos('slideCarrier')">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="400" class="curvCor"  src="{{sixthOngoingProjectImg}}" alt="">
+                    <img height="400" class="curvCor" src="{{sixthOngoingProjectImg}}" alt="">
                     <figcaption>
                         <h3>{{sixthOngoingProjectTitle}}</h3>
                         <article>
@@ -171,10 +204,10 @@
 <section id="slideCarrier1">
     <div>
         <ul>
-            <li class="slider">
-                <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
+            <li class="slider1">
+                <button onclick="clos('slideCarrier1')">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="400" class="curvCor"  src="{{firstCompletedProjectImg}}" alt="">
+                    <img height="400" class="curvCor" src="{{firstCompletedProjectImg}}" alt="">
                     <figcaption>
                         <h3>{{firstCompletedProjectTitle}}</h3>
                         <article>
@@ -188,10 +221,10 @@
                 </figure>
 
             </li>
-            <li class="slider">
-                <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
+            <li class="slider1">
+                <button onclick="clos('slideCarrier1')">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="400" class="curvCor"  src="{{secondCompletedProjectImg}}" alt="">
+                    <img height="400" class="curvCor" src="{{secondCompletedProjectImg}}" alt="">
                     <figcaption>
                         <h3>{{secCompletedProjectTitle}}</h3>
                         <article>
@@ -204,10 +237,10 @@
                 </figure>
 
             </li>
-            <li class="slider flex">
-                <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
+            <li class="slider1">
+                <button onclick="clos('slideCarrier1')">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="400" class="curvCor"  src="{{thirdCompletedProjectImg}}" alt="">
+                    <img height="400" class="curvCor" src="{{thirdCompletedProjectImg}}" alt="">
                     <figcaption>
                         <h3>{{thirdCompletedProjectTitle}}</h3>
                         <article>
@@ -220,10 +253,10 @@
                 </figure>
 
             </li>
-            <li class="slider">
-                <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
+            <li class="slider1">
+                <button onclick="clos('slideCarrier1')">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="400" class="curvCor"  src="{{fourthCompletedProjectImg}}" alt="">
+                    <img height="400" class="curvCor" src="{{fourthCompletedProjectImg}}" alt="">
                     <figcaption>
                         <h3>{{fourthCompletedProjectTitle}}</h3>
                         <article>
@@ -237,10 +270,10 @@
                 </figure>
 
             </li>
-            <li class="slider">
-                <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
+            <li class="slider1">
+                <button onclick="clos('slideCarrier1')">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="400" class="curvCor"  src="{{fifthCompletedProjectImg}}" alt="">
+                    <img height="400" class="curvCor" src="{{fifthCompletedProjectImg}}" alt="">
                     <figcaption>
                         <h3>{{fifthCompletedProjectTitle}}</h3>
                         <article>
@@ -253,10 +286,10 @@
                 </figure>
 
             </li>
-            <li class="slider">
-                <button onclick="clos('slideCarrier1')" style="float:right;margin: 0 50px 0 0;">X</button>
+            <li class="slider1">
+                <button onclick="clos('slideCarrier1')">X</button>
                 <figure class="flex" style="flex-direction: column;">
-                    <img height="400" class="curvCor"  src="{{sixthCompletedProjectImg}}" alt="">
+                    <img height="400" class="curvCor" src="{{sixthCompletedProjectImg}}" alt="">
                     <figcaption>
                         <h3>{{sixthCompletedProjectTitle}}</h3>
                         <article>
@@ -275,44 +308,58 @@
 
 <script>
     let y;
+    let yo = document.getElementsByClassName('slider1')
+    y = document.getElementsByClassName('slider')
     let countre = 0
-    function pode(p) {  
-        y = document.getElementsByClassName('slider') 
+    function pode(p) {
+        for (let index = 0; index < 6; index++) {
+            y.item(index).classList.remove('showwq');
+            yo.item(index).classList.remove('showwq');
+
+        }
         document.getElementById(p).style.display = 'block'
         y.item(countre).classList.add('showwq')
+        yo.item(countre).classList.add('showwq')
+
     }
     function clos(p) {
+        y.item(countre).classList.remove('showwq')
+        yo.item(countre).classList.remove('showwq')
         document.getElementById(p).style.display = 'none'
     }
     function nxt() {
-            y.item(countre).classList.remove('showwq')
-            countre++
-            if(countre == y.length){
-                countre = 0
-            }
-            y.item(countre).classList.add('showwq')
+        y.item(countre).classList.remove('showwq')
+        yo.item(countre).classList.remove('showwq')
+        countre++
+        if (countre == y.length) {
+            countre = 0
         }
+        y.item(countre).classList.add('showwq')
+        yo.item(countre).classList.add('showwq')
+    }
     function prev() {
-         y.item(countre).classList.remove('showwq')
-            countre--
-            if(countre == -1){
-                countre = y.length - 1
-            }
-            y.item(countre).classList.add('showwq')
+        y.item(countre).classList.remove('showwq')
+        yo.item(countre).classList.remove('showwq')
+        countre--
+        if (countre == -1) {
+            countre = y.length - 1
+        }
+        y.item(countre).classList.add('showwq')
+        yo.item(countre).classList.add('showwq')
     }
 
 
     document.getElementById('ongoing').click()
-    function fg(sas){
+    function fg(sas) {
         console.log(sas)
         // buttons
         document.getElementById('completed').classList.remove('active')
         document.getElementById('ongoing').classList.remove('active')
         document.getElementById(sas).classList.add('active')
-        
+
         // tabs
         document.getElementById('ongoing1').classList.remove('show')
         document.getElementById('completed1').classList.remove('show')
-        document.getElementById(sas+1).classList.add('show')
+        document.getElementById(sas + 1).classList.add('show')
     }
 </script>

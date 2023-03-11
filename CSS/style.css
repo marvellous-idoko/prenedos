@@ -248,7 +248,9 @@ ul.flex figure>img {
     overflow: hidden;
     line-height: 0;
 }
-
+#df{
+    display: none;
+}
 footer a {
     padding: .3em;
     border-radius: 3px;
