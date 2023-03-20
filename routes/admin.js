@@ -88,19 +88,6 @@ fireUploader = async (image)=>{
         url = await firebase.getDownloadURL(d)
         console.log(url)
     })
-//    uploadTask.then() => {
-//     // uploadTask.snapshot.ref.getDownloadURL().then(downloadURL => url = downloadURL)
-  
-//     console.log('Uploaded a blob or file!');
-//   });
-//   firebase.getDownloadURL((await uploadTask).ref).then((downloadURL) => {
-//     url = downloadURL;
-//   });
-   // let uploadTask = storageRef.child(`users_images/${image.name}/`).put(image);
-    // uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED,
-    //   (snapshot) => { 
-    //     uploadTask.snapshot.ref.getDownloadURL().then(downloadURL =>{ url = downloadURL;console.log(url)})
-    //   })
       return url;
     }
 exports.routes = router;
