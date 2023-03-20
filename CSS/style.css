@@ -147,8 +147,8 @@ button#bnh {
 button.anik {
     animation-delay: 2.4s;
     background-color: white;
-    width: 10em;
-    height: 3.5em;
+    width: 8em;
+    height: 3em; 
     border-radius: 30px;
     font-size: 15px;
     outline: none;
@@ -239,7 +239,12 @@ li {
 ul.flex figure>img {
     height: 5em;
 }
-
+.active{
+    display: flex!important;
+}
+.gerd{
+    display: none;
+}
 .custom-shape-divider-top-1675737050 {
     position: absolute;
     top: 0;

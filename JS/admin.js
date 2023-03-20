@@ -1,10 +1,10 @@
-const srv = 'https://prenedos.herokuapp.com/admin/' 
-// const srv = 'http://localhost:3000/admin/' 
+// const srv = 'https://prenedos.herokuapp.com/admin/' 
+const srv = 'http://localhost:3000/admin/' 
 
 const formData = new FormData();
 function sender(urlm, il) {
     let y = { case: urlm, value: il }
-    console.log(y)
+    // console.log(y)
     fetch(srv+"upd", {
         method: 'POST', // or 'PUT'
         headers: {
@@ -25,7 +25,25 @@ function sender(urlm, il) {
 function updt(whatn) {
     sender(whatn, document.getElementById(whatn).value)
 }
+setInterval(
+    ()=>{displayer()}, 10000);
 
+let allSlides = document.getElementsByClassName('gerd')
+function displayer() {
+    for (let index = 0; index < allSlides.length; index++) {
+        allSlides.item(index).classList.remove('active') 
+    }
+    if(counter == allSlides.length){
+         counter = 0
+        allSlides.item(counter).classList.add('active')
+        counter++  
+    
+    }else{
+    allSlides.item(counter).classList.add('active')
+    counter++
+    }
+
+    }
 
 function uplImg(whatsx) {
     if (whatsx == 'firstSlideImg') {

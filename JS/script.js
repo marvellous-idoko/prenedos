@@ -7,34 +7,45 @@ function slider() {
         jl.item(counter).classList.remove()
     },4000)
 }
-let counter = 1
+let counter = 0
 
 var cont1 = document.getElementById('mainCont')
 var cont2 = document.getElementById('mainCont2')
 
-setInterval(
-    ()=>{displayer()}, 10000);
+setInterval(()=>{displayer()}, 10000);
 
 
 function displayer() {
- if (counter == 1) {
-     cont1.style.display = 'flex'
-     cont2.style.display = 'none'
+    let y = document.getElementsByClassName('gerd')
+for (let index = 0; index < y.length; index++) {
+    y[index].classList.remove('active') 
+}
+ if (counter == y.length-1) {
+    y.item(counter).classList.add('active')
     counter = 0
-
  }else{
-    cont1.style.display = 'none'
-    cont2.style.display = 'flex'
-    counter = 1
+    y.item(counter).classList.add('active')
+    counter++
 }
 
 }
 displayer()
-// document.body.addEventListener('scroll',dg())
 
-function dg(){
-    if(document.body.scrollHeight == 2179){
-        document.getElementById('df').style.display = "grid";
+document.body.onscroll = ()=>{
+
+    document.getElementById('df').style.display = 'grid'
+    // document.getElementById('df').style.backgroundColor = 'blue'
+}
+
+function servicesDisplay(){
+    console.log(document.getElementById('df').offsetTop)
+    if(document.getElementById('df').offsetTop == 7){
+        document.getElementById('df').style.display = 'block'
     }
-};
-dg()
+    document.addEventListener('scroll',()=>{
+
+        document.getElementById('df')
+    }
+    )
+}
+servicesDisplay()
