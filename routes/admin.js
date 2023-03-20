@@ -22,9 +22,9 @@ const products = [];
 let dbt;
 (async function(){
       // prod 
-  // dbt = await db.findById('630d2084647428d2d665306f')
+  dbt = await db.findById('630d2084647428d2d665306f')
       // local
-        dbt = await db.findById('630d4d987a298eb00f946dbb')
+        // dbt = await db.findById('630d4d987a298eb00f946dbb')
        console.log(dbt)
 })();
 
