@@ -27,16 +27,36 @@ router.get('/', async(req, res, next) => {
     let data = JSON.parse(dbt['address'])
     console.log(data)
   res.render('home', { title: 'products',
-                    headingOne: data['firstHeading'],
-                    headingTwo: data['secHeading'],
+  // headingTwo: ,
                     secSlideImg:data['secSlideImg'],
                     firstSlideImg:data['firstSlideImg'],
+
+                    headingOne: data['firstHeading'],
                     paraOne1: data['firstPara1'],
                     paraOne2: data['firstPara2'],
                     paraOne3: data['firstPara3'],
+
+                    headingTwo:data['secHeading'],
                     paraTwo1: data['secondPara1'],
                     paraTwo2: data['secondPara2'],
                     paraTwo3: data['secondPara3'],
+
+                  
+                    headingThree: data['firstHeading'],
+                    paraThree1: data['firstPara1'],
+                    paraThree2: data['firstPara2'],
+                    paraThree3: data['firstPara3'],
+
+                    headingFour: data['firstHeading'],
+                    paraFour1: data['firstPara1'],
+                    paraFour2: data['firstPara2'],
+                    paraFour3: data['firstPara3'],
+
+                    headingFive: data['firstHeading'],
+                    paraFive1: data['firstPara1'],
+                    paraFive2: data['firstPara2'],
+                    paraFive3: data['firstPara3'],
+
                     svc1title: data['svc1title'],
                     firstServImg:data['firstServImg'],
                     svc1des: data['svc1des'],
