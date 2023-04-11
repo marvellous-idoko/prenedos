@@ -14,6 +14,24 @@ var cont2 = document.getElementById('mainCont2')
 
 setInterval(()=>{displayer()}, 10000);
 
+const dropdwn1 = document.getElementById('dpd1')
+const dropdwn2 = document.getElementById('dpd2')
+// const btn1 = document.getElementById('dpd1')
+
+function erk() {
+    dropdwn1.classList.add('visi')
+}
+function erwk() {
+    dropdwn1.classList.remove('visi')
+}
+
+function erk1() {
+     dropdwn2.classList.add('visi')
+}
+function erw1() {
+    dropdwn2.classList.remove('visi')
+}
+
 
 function displayer() {
     let y = document.getElementsByClassName('gerd')

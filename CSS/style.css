@@ -1,5 +1,6 @@
 :root {
     --purple: #8e24aa;
+    --orange:#ff6c00;
 }
 
 .flex {
@@ -9,7 +10,7 @@
 }
 
 #secondSec {
-    height: 100vh;
+    min-height: 100vh;
     margin-top: -14em;
     background-color: white;
     position: relative;
@@ -33,7 +34,8 @@ figure.imgs {
 
 h1#bgTxt {
     color: transparent;
-    background-image: linear-gradient(90deg, rgb(0, 255, 200), rgb(255, 187, 0));
+    /* background-image: linear-gradient(90deg, rgb(0, 255, 200), rgb(255, 187, 0)); */
+    background-image: linear-gradient(90deg, var(--orange), rgb(255, 217, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: cover;
@@ -107,7 +109,13 @@ html {
 
     }
 }
-
+div#btn1, div#btn2{
+    cursor: pointer;
+}
+    div#btn1:hover, div#btn2:hover{
+    transition: background-color, .38s cubic-bezier(0.215, 0.610, 0.355, 1);
+    background-color: rgba(255, 255, 255, 0.233);
+}
 nav a.flex:hover {
     transition: background-color, .38s cubic-bezier(0.215, 0.610, 0.355, 1);
     background-color: rgba(255, 255, 255, 0.233);
@@ -147,7 +155,7 @@ button#bnh {
 button.anik {
     animation-delay: 2.4s;
     background-color: white;
-    width: 8em;
+    width: 10em;
     height: 3em; 
     border-radius: 30px;
     font-size: 15px;
@@ -170,13 +178,13 @@ button.anik {
     opacity: 0;
 }
 
-div.serv>figure>div:hover {
+div.serv>figure>div:hover , div.serv>a>figure>div:hover{
     opacity: 1;
     transition: opacity 1.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 }
 
-div.serv>figure>div {
+div.serv>figure>div,div.serv>a>figure>div {
     opacity: 0;
     height: inherit;
     flex-direction: column;
@@ -359,7 +367,7 @@ li.slider>button {
     background-size: cover;
 }
 
-div.serv>figure {
+div.serv>figure , div.serv>a>figure {
     /* background-image: url(../img/dfe.jpeg); */
     height: 12em;
     margin: 2px;
@@ -377,7 +385,38 @@ div.serv {
     cursor: default;
     margin: 10px;
     opacity: 0;
-    animation: lok 1s ease 3s forwards;
+    animation: lok 1s ease forwards;
+}
+.hiddin{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+    transform: translateY(0.5rem);
+    position: absolute;
+    display: grid;
+
+    width: 80px;
+    top: 70px;
+    gap: 10px;
+    width: 120px;
+    background-color: white;
+    color: var(--purple);
+}
+.drpdwnEl:hover{
+    background-color: #8e24aa;
+    color: white;
+}
+.drpdwnEl{
+    transition: .25s;
+    width: inherit;
+    padding: 10px 15px;
+    display: block;
+}
+.visi{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0rem);
+    
 }
 
 .bg {

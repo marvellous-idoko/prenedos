@@ -58,7 +58,8 @@ div.tab>ul>li {
     display: block!important;
 }
 #slideCarrier1{
-    background-image: linear-gradient(45deg,orange,var(--purple));
+    /* background-image: linear-gradient(45deg,orange,var(--purple)); */
+    background-color: #000000c9;
     overflow: auto;
     position: fixed;
     width: 100vw;
@@ -78,7 +79,8 @@ li.slider > button, li.slider1 > button{
     margin: 5vw 5vw 0 0;
 }
 #slideCarrier{
-    background-image: linear-gradient(45deg,orange,var(--purple));
+    /* background-image: linear-gradient(45deg,orange,var(--purple)); */
+    background-color: #000000c9;
     overflow: auto;
     position: fixed;
     width: 100vw;

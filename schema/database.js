@@ -10,6 +10,7 @@ const Stdnt = mongoose.Schema({
     bizMoney:Number,
     address:String,
     salt:String,
-    email:String
+    email:String,
+    msgs:[]
 })
 module.exports = mongoose.model('nataUser', Stdnt);

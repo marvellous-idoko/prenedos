@@ -1,5 +1,5 @@
-const srv = 'https://prenedos.herokuapp.com/admin/' 
-// const srv = 'http://localhost:3000/admin/' 
+// const srv = 'https://prenedos.herokuapp.com/admin/' 
+const srv = 'http://localhost:3000/admin/' 
 
 const formData = new FormData();
 function sender(urlm, il) {
@@ -12,10 +12,8 @@ function sender(urlm, il) {
         },
         body: JSON.stringify(y),
     })
-
         .then((response) => response.json())
         .then((data) => {
-            console.log('Success:', data);
             alert(data.msg)
         })
         .catch((error) => {
@@ -25,8 +23,7 @@ function sender(urlm, il) {
 function updt(whatn) {
     sender(whatn, document.getElementById(whatn).value)
 }
-setInterval(
-    ()=>{displayer()}, 10000);
+setInterval(()=>{displayer()}, 10000);
 
 let allSlides = document.getElementsByClassName('gerd')
 function displayer() {
@@ -49,6 +46,29 @@ function uplImg(whatsx) {
     if (whatsx == 'firstSlideImg') {
         formData.append('photo', document.getElementById('firstSlideImg').files[0]);
         formData.append('value', 'firstSlideImg')
+        sendImg(formData)
+    }
+    else if (whatsx == 'secSlideImg') {
+
+        formData.append('photo', document.getElementById('secSlideImg').files[0]);
+        formData.append('value', 'secSlideImg')
+        sendImg(formData)
+    }
+    else if (whatsx == 'thirdSlideImg') {
+        formData.append('photo', document.getElementById('thirdSlideImg').files[0]);
+        formData.append('value', 'thirdSlideImg')
+        sendImg(formData)
+    }
+    else if (whatsx == 'fourthSlideImg') {
+
+        formData.append('photo', document.getElementById('fourthSlideImg').files[0]);
+        formData.append('value', 'fourthSlideImg')
+        sendImg(formData)
+    }
+    else if (whatsx == 'fifthSlideImg') {
+
+        formData.append('photo', document.getElementById('fifthSlideImg').files[0]);
+        formData.append('value', 'fifthSlideImg')
         sendImg(formData)
     }
     else if (whatsx == 'secSlideImg') {
@@ -197,6 +217,32 @@ function uplImg(whatsx) {
         formData.append('value', 'sixthGalleryImg')
         sendImg(formData)
     }
+
+    else if (whatsx == 'tenthServImg') {
+        formData.append('photo', document.getElementById('tenthServImg').files[0]);
+        formData.append('value', 'tenthServImg')
+        sendImg(formData)
+    
+    }
+    else if (whatsx == 'ninthServImg') {
+        formData.append('photo', document.getElementById('ninthServImg').files[0]);
+        formData.append('value', 'ninthServImg')
+        sendImg(formData)
+    
+    }
+    else if (whatsx == 'eightServImg') {
+        formData.append('photo', document.getElementById('eightServImg').files[0]);
+        formData.append('value', 'eightServImg')
+        sendImg(formData)
+    
+    }
+    else if (whatsx == 'seventhServImg') {
+        formData.append('photo', document.getElementById('seventhServImg').files[0]);
+        formData.append('value', 'seventhServImg')
+        sendImg(formData)
+    
+    }
+   
     else if (whatsx == 'sixthServImg') {
         formData.append('photo', document.getElementById('sixthServImg').files[0]);
         formData.append('value', 'sixthServImg')

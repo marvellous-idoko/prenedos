@@ -22,18 +22,23 @@ const products = [];
 let dbt;
 (async function(){
       // prod 
-  dbt = await db.findById('630d2084647428d2d665306f')
+      // dbt = await db.findById('630d2084647428d2d665306f')
       // local
-        // dbt = await db.findById('630d4d987a298eb00f946dbb')
-       console.log(dbt)
+      
+        dbt = await db.findById('630d4d987a298eb00f946dbb')
+        // dbt = await db.findById('6424b7e6c7688400c0b586ba')
+      //  console.log(dbt)
 })();
 
 router.get('/', async(req, res, next) => {
     let data = JSON.parse(await dbt['address'])
+    let msgs = await dbt['msgs']
+    console.log(msgs)
     res.render('admin', { data: '[Admin]',
                         adminCSS:true,
                         headingOne: data['firstHeading'],
                         headingTwo: data['secHeading'],
+                        msgs: JSON.stringify(msgs)
                     });
 });
 
@@ -73,7 +78,19 @@ router.put('/upImg', async(req,res,next)=>{
          })
     })
 })
-
+.post('/messages',async(req,res)=>{
+  // let data = JSON.parse(dbt['address'])
+  let y =[];
+  // console.log(typeof await dbt['dateREg'])
+  if(dbt['msgs']){
+  dbt['msgs'].push(JSON.stringify(req.body))
+  }else{
+    dbt['msgs'].push(JSON.stringify(req.body))
+  }
+  console.log(dbt['msgs'])
+  dbt.save()
+  res.json({code:1,msg:'we received your message'})
+})
 
 router.post('/add-product', (req, res, next) => {
   products.push({ title: req.body.title });

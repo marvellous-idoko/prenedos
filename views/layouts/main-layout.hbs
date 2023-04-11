@@ -22,6 +22,9 @@
     {{#if faqs}}
     <link rel="stylesheet" href="/CSS/faqs.css">
     {{/if}}
+        {{#if services}}
+    <link rel="stylesheet" href="/CSS/services.css">
+    {{/if}}
 </head>
 
 <body>
@@ -29,18 +32,18 @@
     width: 100%; background-color: var(--purple);
     box-shadow: 0 4px 16px 0 #313131;">
         <div class="flex secPad" style="  height: 4.5em;  border-bottom: 1px white solid;">
-            <figure><img src="./img/logo.png" alt="logo" height="60"></figure>
+            <figure style="margin:2px;"><img src="./img/logo.png" alt="logo" height="60"></figure>
             <div style="flex: 2;"></div>
-            <div class="flex" style="place-content: space-around; width: 30vw;height: calc(100% - 0.5em);place-items: end;align-self: end;">
+            <div class="flex" style="place-content: space-around;height: calc(100% - 0.5em);place-items: end;align-self: end;">
                 <a href="/home" class="flex"
                     style="text-decoration: none; height:inherit; border-bottom: 2px white solid;">
                     <p style="margin: 0;color: white;" class="links flex">
                         Home
                     </p>
                 </a>
-                <a href="../projects" class="flex" style="text-decoration: none; height:inherit;">
+                <a href="../services" class="flex" style="text-decoration: none; height:inherit;">
                     <p style="margin: 0;" class="links flex">
-                        Projects
+                        Services
                     </p>
                 </a>
                 <a href="../aboutUs" class="flex" style="text-decoration: none; height:inherit;">
@@ -48,11 +51,24 @@
                         About us
                     </p>
                 </a>
-                <a href="../events" class="flex" style="text-decoration: none; height:inherit;">
+                <div id="btn2" href="../projects" class="flex" onmouseover="erk1()" onmouseout="erw1()" style="text-decoration: none; height:inherit;">
                     <p style="margin: 0;" class="links flex">
-                        events
+                        Projects
                     </p>
-                </a>
+                     <ul id="dpd2" class="hiddin">
+                        <li><a class="drpdwnEl" href="../projects">Ongoing</a></li>
+                        <li><a href="../projects" class="drpdwnEl">Completed</a></li>
+                    </ul> 
+                </div>
+                <div href="../events" id="btn1" onmouseover="erk()" onmouseout="erwk()" class="flex" style="text-decoration: none; height:inherit;" >
+                    <p style="margin: 0;" class="links flex">
+                        Media
+                    </p>
+                    <ul id="dpd1" class="hiddin">
+                        <li><a class="drpdwnEl" href="../events" >Events</a></li>
+                        <li><a href="../events" class="drpdwnEl" >Gallery</a></li>
+                    </ul> 
+                </div>
                 <a href="../faqs" class="flex" style="text-decoration: none; height:inherit;">
                     <p style="margin: 0;" class="links flex">
                         FAQs
@@ -107,6 +123,10 @@
                         <hr>
                         <li>
                             <a href="../projects">Projects</a>
+                        </li>
+                        <hr>
+                         <li>
+                            <a href="../careers">Careers</a>
                         </li>
                         <hr>
                         <li>

@@ -10,72 +10,101 @@ let dbt ;
 // (async function(){
 //        dbt = await db.findById('630d2084647428d2d665306f')
 // })();
+(async function(){
+  // prod 
+  // dbt = await db.findById('630d2084647428d2d665306f')
+  // local
+    dbt = await db.findById('630d4d987a298eb00f946dbb')
+})();
 async function fd(){
       // prod 
-  dbt = await db.findById('630d2084647428d2d665306f')
+  // dbt = await db.findById('630d2084647428d2d665306f')
   // local
-    // dbt = await db.findById('630d4d987a298eb00f946dbb')
+    dbt = await db.findById('630d4d/987a298eb00f946dbb')
      
 }
-fd();
+// fd();
 router.get('/', async(req, res, next) => {
   res.redirect('home')
 }) 
  router.get('/home', async(req, res, next) => {
     // let dbt = await db.findById('630d2084647428d2d665306f')
-  fd()
-    let data = JSON.parse(dbt['address'])
-    console.log(data)
+     console.log('await')
+    fd()
+    let data = JSON.parse(await dbt['address'])
+    // console.log(await dbt)`
   res.render('home', { title: 'products',
-  // headingTwo: ,
-                    secSlideImg:data['secSlideImg'],
-                    firstSlideImg:data['firstSlideImg'],
 
+                  // First Slide
                     headingOne: data['firstHeading'],
                     paraOne1: data['firstPara1'],
                     paraOne2: data['firstPara2'],
                     paraOne3: data['firstPara3'],
+                    firstSlideImg:data['firstSlideImg'],
 
+                  // Second Slide
                     headingTwo:data['secHeading'],
                     paraTwo1: data['secondPara1'],
                     paraTwo2: data['secondPara2'],
                     paraTwo3: data['secondPara3'],
+                    secSlideImg:data['secSlideImg'],
+  
+                  // Third Slide
+                    headingThree: data['thirdHeading'],
+                    paraThree1: data['thirdPara1'],
+                    paraThree2: data['thirdPara2'],
+                    paraThree3: data['thirdPara3'],
+                    thirdSlideImg:data['thirdSlideImg'],
 
-                  
-                    headingThree: data['firstHeading'],
-                    paraThree1: data['firstPara1'],
-                    paraThree2: data['firstPara2'],
-                    paraThree3: data['firstPara3'],
-
-                    headingFour: data['firstHeading'],
+                  // Fourth Slide
+                  headingFour: data['fourthHeading'],
                     paraFour1: data['firstPara1'],
                     paraFour2: data['firstPara2'],
                     paraFour3: data['firstPara3'],
+                    fourthSlideImg:data['fourthSlideImg'],
 
-                    headingFive: data['firstHeading'],
-                    paraFive1: data['firstPara1'],
-                    paraFive2: data['firstPara2'],
-                    paraFive3: data['firstPara3'],
+                  // Fifth Slide
+                  headingFive: data['fifthHeading'],
+                    paraFive1: data['fifthPara1'],
+                    paraFive2: data['fifthPara2'],
+                    paraFive3: data['fifthPara3'],
+                    fifthSlideImg:data['fifthSlideImg'],
 
                     svc1title: data['svc1title'],
                     firstServImg:data['firstServImg'],
                     svc1des: data['svc1des'],
+
                     svc2title: data['svc2title'],
                     secServImg:data['secServImg'],
-
                     svc2des: data['svc2des'],
+
                     svc3title: data['svc3title'],
                     thirdServImg:data['thirdServImg'],
                     svc3des: data['svc3des'],
+
                     svc4title: data['svc4title'],
                     fourthServImg:data['fourthServImg'],
                     svc4des: data['svc4des'],
+
                     svc5title: data['svc5title'],
                     fifthServImg:data['fifthServImg'],
                     svc5des: data['svc5des'],
+
                     svc6title: data['svc6title'],
                     sixthServImg:data['sixthServImg'],
                     svc6des: data['svc6des'],
+
+                    svc7title: data['svc7title'],
+                    seventhServImg:data['seventhServImg'],
+                    svc7des: data['svc7des'],
+
+                    svc8title: data['svc8title'],
+                    eightServImg:data['eightServImg'],
+                    svc8des: data['svc8des'],
+                    
+                    svc9title: data['svc9title'],
+                    ninthServImg:data['ninthServImg'],
+                    svc9des: data['svc9des'],
                     // svc1des: data['svc1des'],
                 });
 });
@@ -206,8 +235,56 @@ router.get('/contact', (req, res, next) => {
    });
  
   });
+  
+  router.get('/services', (req, res, next) => {
+    fd()
+  let data = JSON.parse(dbt['address'])
+    res.render('services', { 
+      services:true,
 
-  router.get('/faqs', (req, res, next) => {
+
+      svc1title: data['svc1title'],
+      firstServImg:data['firstServImg'],
+      svc1des: data['svc1des'],
+
+      svc2title: data['svc2title'],
+      secServImg:data['secServImg'],
+      svc2des: data['svc2des'],
+
+      svc3title: data['svc3title'],
+      thirdServImg:data['thirdServImg'],
+      svc3des: data['svc3des'],
+
+      svc4title: data['svc4title'],
+      fourthServImg:data['fourthServImg'],
+      svc4des: data['svc4des'],
+
+      svc5title: data['svc5title'],
+      fifthServImg:data['fifthServImg'],
+      svc5des: data['svc5des'],
+
+      svc6title: data['svc6title'],
+      sixthServImg:data['sixthServImg'],
+      svc6des: data['svc6des'],
+
+      svc7title: data['svc7title'],
+      seventhServImg:data['seventhServImg'],
+      svc7des: data['svc7des'],
+
+      svc8title: data['svc8title'],
+      eightServImg:data['eightServImg'],
+      svc8des: data['svc8des'],
+      
+      svc9title: data['svc9title'],
+      ninthServImg:data['ninthServImg'],
+      svc9des: data['svc9des'],
+    
+      svc10title: data['svc10title'],
+      tenthServImg:data['tenthServImg'],
+      svc10des: data['svc10des'],
+    });
+  })
+    router.get('/faqs', (req, res, next) => {
   fd()
   res.render('faqs', { faqs:true });
   });

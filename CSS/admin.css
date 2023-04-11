@@ -18,3 +18,8 @@ main>div>label{
 #er3{
     background-image: linear-gradient(133.33deg,#98a9a8 13.28%,#819291 23.36%,#637d89 40.39%,#436271 58.77%,#1e4155 80.6%);
 }
+
+ul#msgs > li{
+    display: flex;
+    place-content: space-between;
+}

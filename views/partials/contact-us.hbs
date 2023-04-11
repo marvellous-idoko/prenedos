@@ -70,10 +70,13 @@
 
             </div>
             <div>
-                <form action="" method="get" class="flex" style="flex-direction:column;">
+                <figure class="flex" style="flex-direction:column;">
+                      <div>
+                            <input type="text" id="name" name="fname" placeholder="Full Name">
+                        </div>
                     <div  class="flex frmBx" style="place-content: space-between;">
                         <div>
-                            <input type="text" id="name" name="fname" placeholder="Full Name">
+                            <input type="tel" id="phn" name="phone" placeholder="contact">
                         </div>
                         <div>
                             <input type="email" id="email" name="email" placeholder="email">
@@ -84,9 +87,10 @@
                             <textarea name="msg" id="msg" style="width:inherit;" cols="50" rows="10" placeholder="your Message"></textarea>
                         </div>
                     </div>
-                    <div><button type="submit">Send</button></div>
-                </form>
+                    <div><button onclick="redsa()" id="btn">Send</button></div>
+                </figure>
             </div>
         </div>
     </div>
 </section>
+<script src="./JS/contact.js"></script>
