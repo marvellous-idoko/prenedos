@@ -1,6 +1,16 @@
 <section>
     <main>
         <div>
+              <div>
+            <h4>Prospective Customer Messages</h4>
+            <div>
+                <ul id="msgs">
+
+                </ul>
+            </div>
+            
+        </div>
+        <input type="text" style="display:none;" name="" id="ks" value="{{msgs}}">
             <header>
                 <h4>Home</h4>
                 </hr>
@@ -866,13 +876,28 @@
             </div>
         </div>
         <div>
-            <h4>Prospective Customer Messages</h4>
+            {{!-- <h4>Prospective Customer Messages</h4>
             <div>
                 <ul id="msgs">
 
                 </ul>
+            </div> --}}
+        <h3>
+            Post a Job
+        </h3>         
+        <div >
+            <div>
+                <label for="title">Insert Job Title</label>
+                <input type="text" placeholder="Job Title" id="title">
             </div>
-            
+            <div>
+                <label for="desc">Insert Job's Description</label>
+                <textarea id="jobDesc">Comprehensive Job Description</textarea>
+            </div>
+            <button onclick="postJob()">
+                Post Job
+            </button>
+        </div>   
         </div>
         <input type="text" style="display:none;" name="" id="ks" value="{{msgs}}">
     </main>
@@ -880,7 +905,6 @@
         let array = JSON.parse(document.getElementById('ks').value)
         array.forEach(function(item) {
             let ite = JSON.parse(item)
-
             var i = document.createElement('li')
             let email = document.createElement('p')
            let txtE = document.createTextNode(ite.email)

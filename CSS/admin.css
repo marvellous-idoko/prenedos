@@ -6,6 +6,10 @@ main>div>label{
     main>div{
     margin: 30px;
 }
+input{
+    height: 3em;
+    width: 20em;
+}
 .flex {
     display: flex;
     place-items: baseline;

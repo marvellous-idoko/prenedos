@@ -1,11 +1,31 @@
-// const srv = 'https://prenedos.herokuapp.com/admin/' 
-const srv = 'http://localhost:3000/admin/' 
+const srv = 'https://prenedos.onrender.com/admin/' 
+// const srv = 'http://localhost:3000/admin/' 
 
 const formData = new FormData();
 function sender(urlm, il) {
     let y = { case: urlm, value: il }
     // console.log(y)
     fetch(srv+"upd", {
+        method: 'POST', // or 'PUT'
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(y),
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            alert(data.msg)
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        })
+}
+function postJob() {
+    let y = {
+        title:document.getElementById('title').value, 
+        desc:document.getElementById('jobDesc').value   
+    }
+    fetch(srv+"post-job", {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',

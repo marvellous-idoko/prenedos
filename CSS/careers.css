@@ -1,0 +1,21 @@
+section.secPad{
+    background-color: #f2f2f2;
+    color: black;
+}
+p.carText{
+    white-space: pre-wrap;
+    line-height: 2;
+    padding: 3% 5%;
+}
+div.postCont{
+    background-color: white;
+    margin-top: 1em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 70%;
+}
+.padBx{
+    padding: 10px 20px;
+}
+div>header{
+    border-bottom:1px solid var(--orange);
+}

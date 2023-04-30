@@ -75,10 +75,6 @@ figure>div>input{
     width: 100%;
     align-self: center;
 }
-ul#msgs, ul#msgs > li{
-    display: flex;
-    place-content: space-between;
-}
 div.frmBx input,div.frmBx textarea, figure>div>input{
     font-size: 15px;
     padding: 8px;

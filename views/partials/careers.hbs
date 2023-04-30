@@ -1,0 +1,77 @@
+<section class="secPad" style="padding-top: 10vh;">
+    <div>
+        <h1 style="color:var(--orange);">
+            Join the Prendos Mission
+        </h1>
+        <p>build your dream career with prenedos power</p>
+        <div id="kie">
+            {{!-- <div class="postCont curvCor" style="width: 70%;">
+                <header style="border-bottom:1px solid var(--orange)" class="padBx">
+
+                    <h3 style="color:var(--orange);">
+                        HR Manager
+                    </h3>
+                </header>
+                <p class="carText">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Labore, expedita placeat quia unde excepturi
+                    impedit a fugit at, sequi nemo pariatur
+                    exercitationem rerum cumque non natus! Debitis repellendus
+                    nesciunt quasi?
+                </p>
+            </div> --}}
+
+            {{!-- <div class="postCont curvCor">
+                <header class="padBx">
+                    <h3 style="color:var(--orange);" class="titTxt">
+                        HR Manager
+                    </h3>
+                </header>
+                <p class="carText">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Labore, expedita placeat quia unde excepturi
+                    impedit a fugit at, sequi nemo pariatur
+                    exercitationem rerum cumque non natus! Debitis repellendus
+                    nesciunt quasi?
+                </p>
+            </div> --}}
+        </div>
+    </div>
+    <input type="text" id="ks" value="{{jobs}}" style="display: none;">
+    <script>
+        let array = JSON.parse(document.getElementById('ks').value)
+        console.log(array)
+
+        array.forEach(function (item) {
+            let ite = JSON.parse(item)
+
+            var i = document.createElement('div')
+            let title = document.createElement('h3')
+            let hdr = document.createElement('header')
+            hdr.classList.add('padBx')
+           let txtE = document.createTextNode(ite.title)
+            title.appendChild(txtE)
+            hdr.appendChild(title)
+            i.appendChild(hdr)
+        
+            i.classList.add('postCont')
+            i.classList.add('curvCor')
+
+            
+            let fullTxt = document.createElement('p')
+            fullTxt.classList.add('carText')
+           let txtF = document.createTextNode(ite.desc)
+           fullTxt.appendChild(txtF)
+           i.appendChild(fullTxt)
+            
+            document.getElementById('kie').appendChild(i)
+           
+
+            // let name = document.createElement('p')
+            // let txtN = document.createTextNode(ite.name)
+            // name.appendChild(txtN)
+            // i.appendChild(name)
+
+        })        
+    </script>
+</section>

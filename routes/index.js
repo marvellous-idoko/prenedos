@@ -12,18 +12,17 @@ let dbt ;
 // })();
 (async function(){
   // prod 
-  // dbt = await db.findById('630d2084647428d2d665306f')
+  dbt = await db.findById('630d2084647428d2d665306f')
   // local
-    dbt = await db.findById('630d4d987a298eb00f946dbb')
+    // dbt = await db.findById('630d4d987a298eb00f946dbb')
 })();
 async function fd(){
       // prod 
-  // dbt = await db.findById('630d2084647428d2d665306f')
+  dbt = await db.findById('630d2084647428d2d665306f')
   // local
-    dbt = await db.findById('630d4d/987a298eb00f946dbb')
+    // dbt = await db.findById('630d4d/987a298eb00f946dbb')
      
 }
-// fd();
 router.get('/', async(req, res, next) => {
   res.redirect('home')
 }) 
@@ -118,6 +117,14 @@ router.get('/contact', (req, res, next) => {
   fd()
     res.render('contact-us', { cntUs:true });
   });
+router.get('/careers', async(req, res, next) => {
+    fd()
+    
+      res.render('careers', {
+         careers:true,
+         jobs: JSON.stringify(await dbt['jobs']),        
+        })
+ });
   router.get('/projects', async(req, res, next) => {
     // let dbt = await db.findById('630d2084647428d2d665306f')
     fd()

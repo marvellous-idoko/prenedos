@@ -22,10 +22,10 @@ const products = [];
 let dbt;
 (async function(){
       // prod 
-      // dbt = await db.findById('630d2084647428d2d665306f')
-      // local
+      dbt = await db.findById('630d2084647428d2d665306f')
       
-        dbt = await db.findById('630d4d987a298eb00f946dbb')
+      // local
+        // dbt = await db.findById('630d4d987a298eb00f946dbb')
         // dbt = await db.findById('6424b7e6c7688400c0b586ba')
       //  console.log(dbt)
 })();
@@ -47,13 +47,24 @@ router.post('/upd', async (req, res, next) => {
     let y = req.body.case
     console.log(y)
     data[y] = req.body.value
-    
     dbt['address'] = JSON.stringify(data)
     console.group(JSON.parse(dbt['address']))
     dbt.save()
     res.json({code:1,msg:'done'})
-
-  });
+  }).post("/post-job", async(req,res)=>{
+    // let data = JSON.parse(dbt['address'])
+    console.log(req.body)
+    
+  if(dbt['jobs']){
+    dbt['jobs'].push(JSON.stringify(req.body))
+    }else{
+      dbt['jobs'].push(JSON.stringify(req.body))
+    }
+    console.log(dbt['jobs'])
+    dbt.save()
+    res.json({code:1,msg:'Job Posted'})
+    
+  })
 router.put('/upImg', async(req,res,next)=>{
     // console.log(req.files)
    let data = JSON.parse(dbt['address'])
