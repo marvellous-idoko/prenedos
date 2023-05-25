@@ -17,7 +17,7 @@ const general = require('./routes/index');
 
 
 var cors = require("cors");
-app.use(cors({origin: ['https://www.prenedos.com','https://prenedos.com']}));
+app.use(cors({origin: "*"}));
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
