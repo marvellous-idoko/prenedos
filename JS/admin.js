@@ -1,4 +1,4 @@
-const srv = 'https://prenedos.onrender.com/admin/' 
+const srv = 'https://prenedos.com/admin/' 
 // const srv = 'http://localhost:3000/admin/' 
 
 const formData = new FormData();
