@@ -7,16 +7,15 @@ const db = require("../schema/database");
 
 const router = express.Router();
 let dbt ;
-// (async function(){
-//        dbt = await db.findById('630d2084647428d2d665306f')
-// })();
+
 (async function(){
   // prod 
-  dbt = await db.findById('630d2084647428d2d665306f')
+  // dbt = await db.findById('630d2084647428d2d665306f')
   // local
-    // dbt = await db.findById('630d4d987a298eb00f946dbb')
+    dbt = await db.findById('630d4d987a298eb00f946dbb')
+    console.log(dbt)
 })();
-async function fd(){
+module.exports = async function fd(){
       // prod 
   dbt = await db.findById('630d2084647428d2d665306f')
   // local
@@ -27,12 +26,9 @@ router.get('/', async(req, res, next) => {
   res.redirect('home')
 }) 
  router.get('/home', async(req, res, next) => {
-    // let dbt = await db.findById('630d2084647428d2d665306f')
-     console.log('await')
-    fd()
+
     let data = JSON.parse(await dbt['address'])
-    // console.log(await dbt)`
-  res.render('home', { title: 'products',
+     res.render('home', { title: 'products',
 
                   // First Slide
                     headingOne: data['firstHeading'],
@@ -57,9 +53,9 @@ router.get('/', async(req, res, next) => {
 
                   // Fourth Slide
                   headingFour: data['fourthHeading'],
-                    paraFour1: data['firstPara1'],
-                    paraFour2: data['firstPara2'],
-                    paraFour3: data['firstPara3'],
+                    paraFour1: data['fourthPara1'],
+                    paraFour2: data['fourthPara2'],
+                    paraFour3: data['fourthPara3'],
                     fourthSlideImg:data['fourthSlideImg'],
 
                   // Fifth Slide
@@ -109,17 +105,13 @@ router.get('/', async(req, res, next) => {
 });
 
 router.get('/aboutUs', (req, res, next) => {
-  fd()
   res.render('about-us', { data: '',abtUs:true});
   });
   
 router.get('/contact', (req, res, next) => {
-  fd()
     res.render('contact-us', { cntUs:true });
   });
-router.get('/careers', async(req, res, next) => {
-    fd()
-    
+router.get('/careers', async(req, res, next) => {    
       res.render('careers', {
          careers:true,
          jobs: JSON.stringify(await dbt['jobs']),        
@@ -127,8 +119,7 @@ router.get('/careers', async(req, res, next) => {
  });
   router.get('/projects', async(req, res, next) => {
     // let dbt = await db.findById('630d2084647428d2d665306f')
-    fd()
-  
+ 
     let data = JSON.parse(dbt['address'])
     res.render('projects', {
              prjcts:true,
@@ -188,7 +179,6 @@ router.get('/careers', async(req, res, next) => {
 
   router.get('/events', async(req, res, next) => {
     // let dbt = await db.findById('630d2084647428d2d665306f')
-  fd()
   let data = JSON.parse(dbt['address'])
      res.render('events', { prjcts:true,
       firstEventTitle:data['firstEventTitle'],
@@ -244,7 +234,6 @@ router.get('/careers', async(req, res, next) => {
   });
   
   router.get('/services', (req, res, next) => {
-    fd()
   let data = JSON.parse(dbt['address'])
     res.render('services', { 
       services:true,
@@ -292,7 +281,6 @@ router.get('/careers', async(req, res, next) => {
     });
   })
     router.get('/faqs', (req, res, next) => {
-  fd()
   res.render('faqs', { faqs:true });
   });
 

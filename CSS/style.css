@@ -8,10 +8,13 @@
     place-content: center;
     place-items: center;
 }
-
+.slideTxtCar{
+    height: 20vh;flex-direction: column;place-items: baseline;flex:1;
+    margin-top: -30vh;
+}
 #secondSec {
     min-height: 100vh;
-    margin-top: -14em;
+    margin-top: -20vh;
     background-color: white;
     position: relative;
     z-index: 2;
@@ -19,8 +22,8 @@
 }
 
 figure.imgs {
-    transform: rotate(-25deg);
-    height: 35em;
+    transform: rotate(-20deg);
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -35,7 +38,7 @@ figure.imgs {
 h1#bgTxt {
     color: transparent;
     /* background-image: linear-gradient(90deg, rgb(0, 255, 200), rgb(255, 187, 0)); */
-    background-image: linear-gradient(90deg, var(--orange), rgb(255, 217, 0));
+    background-image: linear-gradient(90deg, var(--orange), #ffd900);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: cover;
@@ -43,8 +46,12 @@ h1#bgTxt {
     font-family: system-ui;
     margin: 0;
     background-clip: text;
+    font-size: 3.3vw;
 }
 
+div.gerd article{
+    font-size: 1.2vw;
+}
 .secPad {
     padding: 0 10vw;
 }
@@ -252,7 +259,14 @@ ul.flex figure>img {
 }
 .gerd{
     display: none;
+    width: 100%;
+    place-content: end;
 }
+/* @media (max-width:1700) {
+    h1#bgTxt{
+        font-size: 400%;
+    }
+} */
 .custom-shape-divider-top-1675737050 {
     position: absolute;
     top: 0;
@@ -357,9 +371,11 @@ li.slider>button {
     color: red;
     font-size: 25px;
 }
-
+#lk{
+    height:100vh;width:inherit;
+}
 .paralax {
-    background-image: url(../img/ks.jpeg);
+    background-image: url(../img/ks.jpg);
     height: calc(100% + 5vh);
     background-attachment: fixed;
     background-position: center;
@@ -381,7 +397,7 @@ div.serv>figure , div.serv>a>figure {
 
 div.serv {
     /* color: white; */
-    width: 20em;
+    width: 20vw;
     cursor: default;
     margin: 10px;
     opacity: 0;

@@ -1,5 +1,5 @@
 const path = require('path');
-
+const index = require('./index')
 const express = require('express');
 const db = require("../schema/database");
 const fir = require('@firebase/app')
@@ -26,14 +26,13 @@ let dbt;
       
       // local
         // dbt = await db.findById('630d4d987a298eb00f946dbb')
-        // dbt = await db.findById('6424b7e6c7688400c0b586ba')
+        // old dbt = await db.findById('6424b7e6c7688400c0b586ba')
       //  console.log(dbt)
 })();
 
 router.get('/', async(req, res, next) => {
     let data = JSON.parse(await dbt['address'])
     let msgs = await dbt['msgs']
-    console.log(msgs)
     res.render('admin', { data: '[Admin]',
                         adminCSS:true,
                         headingOne: data['firstHeading'],
@@ -51,9 +50,8 @@ router.post('/upd', async (req, res, next) => {
     console.group(JSON.parse(dbt['address']))
     dbt.save()
     res.json({code:1,msg:'done'})
-  }).post("/post-job", async(req,res)=>{
-    // let data = JSON.parse(dbt['address'])
-    console.log(req.body)
+    index.fd()
+}).post("/post-job", async(req,res)=>{
     
   if(dbt['jobs']){
     dbt['jobs'].push(JSON.stringify(req.body))
