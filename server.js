@@ -16,6 +16,9 @@ const adminData = require('./routes/admin');
 const general = require('./routes/index');
 
 
+var cors = require("cors");
+app.use(cors({origin: "*"}));
+
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
