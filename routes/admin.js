@@ -77,7 +77,7 @@ router.put('/upImg', async(req,res,next)=>{
          uploadTask.then(async()=>{
             data[ase] = await firebase.getDownloadURL(d)
             //  console.log(url)
-             console.log(data[ase])
+             console.log(ase)
              console.log(data)
              dbt['address'] = JSON.stringify(data)
              dbt.save()
