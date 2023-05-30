@@ -1,5 +1,4 @@
 const path = require('path');
-const index = require('./index')
 const express = require('express');
 const db = require("../schema/database");
 const fir = require('@firebase/app')
@@ -47,10 +46,9 @@ router.post('/upd', async (req, res, next) => {
     console.log(y)
     data[y] = req.body.value
     dbt['address'] = JSON.stringify(data)
-    console.group(JSON.parse(dbt['address']))
+    // console.group(JSON.parse(dbt['address']))
     dbt.save()
     res.json({code:1,msg:'done'})
-    index.fd()
 }).post("/post-job", async(req,res)=>{
     
   if(dbt['jobs']){

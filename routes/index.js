@@ -14,21 +14,21 @@ let dbt ;
   // local
     // dbt = await db.findById('630d4d987a298eb00f946dbb')
 })();
-module.exports = fd = async function(){
-  console.log('called . . . .')
+// module.exports = {
+
+  async function fd(){
       // prod 
   dbt = await db.findById('630d2084647428d2d665306f')
-  console.log(dbt)
-
   // local
     // dbt = await db.findById('630d4d/987a298eb00f946dbb')
      
 }
+// }
 router.get('/', async(req, res, next) => {
   res.redirect('home')
 }) 
  router.get('/home', async(req, res, next) => {
-
+  fd()
     let data = JSON.parse(await dbt['address'])
      res.render('home', { title: 'products',
 
@@ -104,16 +104,20 @@ router.get('/', async(req, res, next) => {
                     svc9des: data['svc9des'],
                     // svc1des: data['svc1des'],
                 });
-});
+
+              });
 
 router.get('/aboutUs', (req, res, next) => {
+  fd()
   res.render('about-us', { data: '',abtUs:true});
   });
   
 router.get('/contact', (req, res, next) => {
+  fd()
     res.render('contact-us', { cntUs:true });
   });
 router.get('/careers', async(req, res, next) => {    
+  fd()
       res.render('careers', {
          careers:true,
          jobs: JSON.stringify(await dbt['jobs']),        
@@ -121,6 +125,7 @@ router.get('/careers', async(req, res, next) => {
  });
   router.get('/projects', async(req, res, next) => {
     // let dbt = await db.findById('630d2084647428d2d665306f')
+    fd()
  
     let data = JSON.parse(dbt['address'])
     res.render('projects', {
@@ -180,7 +185,8 @@ router.get('/careers', async(req, res, next) => {
   });
 
   router.get('/events', async(req, res, next) => {
-    // let dbt = await db.findById('630d2084647428d2d665306f')
+  fd()
+  // let dbt = await db.findById('630d2084647428d2d665306f')
   let data = JSON.parse(dbt['address'])
      res.render('events', { prjcts:true,
       firstEventTitle:data['firstEventTitle'],
@@ -236,7 +242,8 @@ router.get('/careers', async(req, res, next) => {
   });
   
   router.get('/services', (req, res, next) => {
-  let data = JSON.parse(dbt['address'])
+    fd()
+    let data = JSON.parse(dbt['address'])
     res.render('services', { 
       services:true,
 
