@@ -15,8 +15,11 @@ let dbt ;
     // dbt = await db.findById('630d4d987a298eb00f946dbb')
 })();
 module.exports = async function fd(){
+  console.log('called . . . .')
       // prod 
   dbt = await db.findById('630d2084647428d2d665306f')
+  console.log(dbt)
+
   // local
     // dbt = await db.findById('630d4d/987a298eb00f946dbb')
      
