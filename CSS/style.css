@@ -45,11 +45,11 @@ h1#bgTxt {
     font-family: system-ui;
     margin:  0 0 20px 0;
     background-clip: text;
-    font-size: 3.3vw;
+    font-size: 3.5vw;
 }
 
 div.gerd article{
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 .secPad {
     padding: 0 10vw;
