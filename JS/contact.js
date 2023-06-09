@@ -1,5 +1,6 @@
 // const srv = 'https://prenedos.herokuapp.com/admin/' 
-const srv = 'http://localhost:3000/admin/' 
+// const srv = 'http://localhost:3000/admin/' 
+const srv = 'https://www.prenedos.com/admin/'
 
 
 
