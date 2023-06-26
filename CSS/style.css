@@ -26,6 +26,10 @@ figure.imgs {
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    border: var(--orange) 4px solid;
+    border-radius: 20px;
+    box-shadow: var(--orange) 0 0 15px 5px;
+    background-color: white;
 }
 
 .bigTxt {
