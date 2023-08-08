@@ -14,7 +14,6 @@
 }
 #secondSec {
     min-height: 100vh;
-    margin-top: -20vh;
     background-color: white;
     position: relative;
     z-index: 2;
@@ -22,8 +21,8 @@
 }
 
 figure.imgs {
-    transform: rotate(-20deg);
-    height: 100vh;
+    height: 65vh;
+    margin-top: -5vh;
     background-size: cover;
     background-repeat: no-repeat;
     border: var(--orange) 4px solid;
